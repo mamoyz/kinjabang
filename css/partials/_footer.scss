@@ -1,0 +1,49 @@
+@import "../variables";
+
+footer {
+  text-align: center;
+  border-top: 20px solid #000;
+  position: relative;
+  overflow: hidden;
+  > div {
+    transform: translate(0, 100%);
+    transition: all 0.3s;
+  }
+  &.init {
+    > div {
+      transform: translate(0, 0);
+    }
+  }
+  .footer-logo {
+    display: inline-block;
+    img {
+      margin-top: 35px;
+
+      width: 1090px;
+    }
+  }
+  .footer-social {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+
+    li {
+      a {
+        padding: 0 6px;
+        display: block;
+        img {
+          width: 58px;
+        }
+      }
+    }
+  }
+  .footer-copyright {
+    font: 400 12.5px/20px $font-lemon;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding-bottom: 10px;
+  }
+}

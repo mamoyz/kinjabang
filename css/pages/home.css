@@ -1,0 +1,16 @@
+body {
+    padding: 30px;
+}
+
+body.home {
+    background: #000;
+}
+
+.home-hero {
+    background-color: #f2c672;
+    background-image: url("../images/header-bg-pattern.png");
+    min-height: 100vh;
+}
+
+
+/*# sourceMappingURL=home.css.map */

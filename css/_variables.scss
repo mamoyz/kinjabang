@@ -1,0 +1,34 @@
+$font-heavitas: "heavitas_regular";
+$font-lemon: "lemon_milkbold";
+$font-regular: "lemon_regular";
+$font-rail: "third_rail";
+$font-acumin: "acumin-pro";
+@mixin down-sm {
+  @media (max-width: 960px) {
+    @content;
+  }
+}
+
+@mixin up-sm {
+  @media (min-width: 961px) {
+    @content;
+  }
+}
+
+@mixin up-xl {
+  @media (min-width: 1600px) {
+    @content;
+  }
+}
+
+@mixin desk {
+  @media (min-width: 961px) and (max-width: 1919px) {
+    @content;
+  }
+}
+
+@mixin fourk {
+  @media (min-width: 1920px) {
+    @content;
+  }
+}

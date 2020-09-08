@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "general.scss",
+        "variables.scss",
+        "partials/header.scss",
+        "variables.scss",
+        "partials/footer.scss",
+        "variables.scss"
+    ],
+    "names": [],
+    "file": "general.css"
+}

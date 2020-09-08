@@ -1,0 +1,191 @@
+.about-noodles-heading {
+  text-align: center;
+  background: #000;
+  padding-top: 130px;
+  padding-bottom: 182px;
+  h1 {
+    font: 400 330px/350px $font-lemon;
+    letter-spacing: 35px;
+    text-transform: uppercase;
+  }
+  img {
+    width: 750px;
+    opacity: 0;
+    transition: 1s all 0.5s;
+  }
+  &.init {
+    img {
+      opacity: 1;
+    }
+  }
+}
+
+.about-row {
+  background: #000;
+
+  .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    background: #000;
+    flex-wrap: wrap;
+    margin-bottom: -20px;
+  }
+  .about-noodle-item {
+    flex: 0 1 calc(50% - 10px);
+    background: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+
+    &:first-child {
+      .item-content {
+        background: url("../assets/img/texture-min.png") no-repeat;
+        background-size: cover;
+      }
+    }
+    .item-img {
+      padding-top: 83%;
+      background-size: cover;
+      background-position: center center;
+      position: relative;
+      overflow: hidden;
+
+      &:before {
+        content: " ";
+        background: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: translate(0, 0);
+        z-index: 1;
+        transition: all 0.5s;
+      }
+    }
+    &:nth-child(odd) {
+      .item-img.init {
+        &:before {
+          transform: translate(0, -101%);
+        }
+      }
+    }
+    &:nth-child(even) {
+      .item-img.init {
+        &:before {
+          transform: translate(0, 101%);
+        }
+      }
+    }
+    .item-content {
+      height: 950px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      padding-bottom: 280px;
+      .item-content-wrapper {
+        padding-left: 125px;
+        padding-right: 125px;
+        h2 {
+          opacity: 0;
+          font: 400 66px/70px $font-lemon;
+          color: #000;
+          letter-spacing: 7.5px;
+          text-transform: uppercase;
+          margin-bottom: 45px;
+          position: relative;
+          transition: opacity 0.5s, transform 0.5s;
+          transform: translate(0, -30px);
+          span {
+            position: relative;
+            z-index: 2;
+          }
+          &.no1 {
+            margin-top: 90px;
+            &:before {
+              z-index: 1;
+              content: " ";
+              background: url("../assets/img/no1.png") no-repeat;
+              display: block;
+              background-size: contain;
+              position: absolute;
+              width: 184px;
+              height: 175px;
+              left: -110px;
+              top: -86px;
+            }
+          }
+        }
+        .desc-content {
+          font: 400 32px/58px $font-regular;
+          color: #000;
+          text-transform: uppercase;
+          letter-spacing: 3.5px;
+          display: none;
+          .desc-content-wrapper {
+            &:before {
+              content: " ";
+              height: 175px;
+              width: 110px;
+              background: url("../assets/img/logo_image.svg") no-repeat;
+              background-size: cover;
+              margin-top: 30px;
+              display: inline-block;
+            }
+          }
+          .btn-fill {
+            &.back {
+              display: inline-block !important;
+              min-width: 400px;
+            }
+          }
+        }
+        .btn-fill {
+          opacity: 0;
+          transition: all 0.5s;
+          display: block;
+          font: 400 32px/34px $font-lemon;
+          color: #000;
+          letter-spacing: 5px;
+          text-transform: uppercase;
+          text-decoration: none;
+          border: 4px solid #000;
+          padding: 40px;
+          position: relative;
+          transform: translate(0, 30px);
+        }
+        &.init {
+          h2,
+          .btn-fill {
+            opacity: 1;
+            transform: translate(0, 0);
+          }
+        }
+      }
+    }
+    &.hide {
+      display: none;
+    }
+    &.show {
+      flex: 0 1 100%;
+      .item-content {
+        height: auto;
+        padding-top: 172px;
+        .item-content-wrapper {
+          padding-left: 0;
+          padding-right: 0;
+          max-width: 1560px;
+          .btn-fill {
+            display: none;
+          }
+          h2 {
+            font: 400 126px/134px $font-lemon;
+            display: inline;
+          }
+          .desc-content {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
