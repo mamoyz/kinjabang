@@ -138,7 +138,7 @@
         position: relative;
         top: -124px;
         left: 34px;
-        width: 1168px;
+        width: 1090px;
         margin-bottom: -124px;
         opacity: 0;
         transform: scale(0.5) translate(0, 50%);
@@ -343,6 +343,7 @@
       margin: auto;
     }
     .td1 {
+      flex: 0 1 76.8%;
       opacity: 0;
       transition: 0.5s all 0s;
     }
