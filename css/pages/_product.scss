@@ -1,0 +1,269 @@
+.product-hero {
+  height: 727px;
+  overflow: visible;
+  .hero-main-product {
+    position: relative;
+
+    img {
+      position: relative;
+      top: 205px;
+      z-index: 10;
+    }
+    &:before {
+      content: " ";
+      background: url(../assets/img/SpicyPepper.png) no-repeat;
+      width: 410px;
+      height: 500px;
+      background-size: contain;
+      position: absolute;
+      left: -223px;
+      top: 490px;
+      z-index: 5;
+      transform: translate(50%, 0);
+      opacity: 0;
+      transition: 1s all 1s;
+    }
+  }
+  &.init {
+    .hero-main-product {
+      &:before {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.product-h2 {
+  margin-top: 86px;
+  color: #e16048;
+  text-transform: uppercase;
+  font: 400 32px/34px $font-lemon;
+  letter-spacing: 5px;
+  margin-bottom: 30px;
+  &.facts {
+    margin-top: 60px;
+    margin-bottom: -5px;
+  }
+}
+.product-info {
+  text-align: center;
+  padding-top: 430px;
+  position: relative;
+  z-index: 10;
+  #mandarin-style {
+    width: 380px;
+    opacity: 0;
+    transition: all 0.3s;
+    &.init {
+      opacity: 1;
+    }
+  }
+  h1 {
+    font: 400 77px/77px $font-lemon;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: #000;
+    margin-top: 17px;
+    margin-bottom: 27px;
+    opacity: 0;
+    transition: all 1s;
+    &.init {
+      opacity: 1;
+      letter-spacing: 46px;
+    }
+  }
+  #logoimg {
+    width: 90px;
+    opacity: 0;
+    transition: 0.5s all 0.5s;
+    transform: translate(0, 50px);
+    &.init {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+  #callouts {
+    width: 450px;
+    margin: 33px auto 0;
+    display: flex;
+    justify-content: space-between;
+    img {
+      width: 31%;
+      opacity: 0;
+      transition: all 0.5s;
+      &:nth-child(1) {
+        transform: translate(100px, 0);
+      }
+      &:nth-child(2) {
+        transform: translate(0, 50px);
+      }
+      &:nth-child(3) {
+        transform: translate(-100px, 0);
+      }
+    }
+    &.init {
+      img {
+        opacity: 1;
+        transform: translate(0, 0);
+      }
+    }
+  }
+
+  .product-info-content {
+    font: 400 20px/38px $font-regular;
+    width: 860px;
+    margin: auto;
+    letter-spacing: 3.5px;
+  }
+  #nfp {
+    width: 1030px;
+  }
+}
+
+.product-middle {
+  position: relative;
+  top: -190px;
+  margin-bottom: -190px;
+  z-index: 5;
+  background: #000;
+  &:before {
+    content: " ";
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200vw;
+    height: 100%;
+    transform: translate(-201vw, 0);
+    z-index: 1;
+    transition: all 1s cubic-bezier(0, 0, 0.96, -0.1);
+  }
+
+  img {
+    width: 100%;
+    display: block;
+    opacity: 0;
+    transition: 1s all 0.5s;
+  }
+  &.init {
+    &::before {
+      transform: translate(201vw, 0);
+    }
+    img {
+      opacity: 1;
+    }
+  }
+}
+
+.instructions {
+  padding-top: 70px;
+  padding-bottom: 72px;
+  h2 {
+    text-align: center;
+  }
+  .intructions-inner {
+    margin: 82px auto 0px;
+    width: 955px;
+    .intructions-row {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 47px;
+      div {
+        opacity: 0;
+        transition: all 0.4s;
+        &:nth-child(1) {
+          flex: 0 1 140px;
+          transform: translate(50px, 0);
+          img {
+            width: 100%;
+          }
+        }
+        &:nth-child(2) {
+          transform: translate(-50px, 0);
+
+          flex: 0 1 815px;
+          letter-spacing: 2px;
+          padding-left: 47px;
+          font: 400 21px/37px $font-regular;
+          color: #000;
+          text-transform: uppercase;
+          p {
+            margin: 0;
+          }
+        }
+      }
+      &.init {
+        div {
+          transform: translate(0, 0);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.product-about {
+  background: #000;
+  padding-top: 20px;
+  .product-about-noodle-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .about-noodle-item {
+      flex: 0 1 calc(25% - 15px);
+      max-width: calc(25% - 15px);
+      margin-bottom: 0px;
+
+      &.init {
+        .item-img {
+          &:before {
+            transform: translate(0, -101%);
+          }
+        }
+        .item-content {
+          h2,
+          .btn-fill {
+            opacity: 1;
+            transform: translate(0, 0);
+          }
+        }
+      }
+
+      &:not(.show) {
+        .item-img {
+          padding-top: 81%;
+        }
+        .item-content {
+          height: 340px;
+          padding-bottom: 70px;
+          .item-content-wrapper {
+            padding-left: 30px;
+            padding-right: 30px;
+          }
+          .btn-fill {
+            display: inline-block;
+            width: 310px;
+            font: 400 15px/16px $font-lemon;
+            letter-spacing: 4px;
+            padding: 15px;
+          }
+          h2 {
+            font: 400 30px/33px $font-lemon;
+            margin-bottom: 15px;
+            letter-spacing: 6px;
+            &.no1 {
+              &:before {
+                width: 85px;
+                height: 80px;
+                left: -17px;
+                top: -52px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

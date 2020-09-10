@@ -9,13 +9,13 @@
     content: " ";
     background: url("../assets/img/bg-pattern-1.png");
     position: absolute;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     left: 0;
     top: 0;
     z-index: 5;
     transform: rotate(-3deg);
-    animation: 30s homeHero infinite linear;
+    animation: 30000s homeHero infinite forwards linear;
     transition: 2s all 0.5s cubic-bezier(0.15, 1.01, 1, 1);
     opacity: 0;
   }
@@ -29,7 +29,7 @@
     top: 0;
     z-index: 5;
     transform: rotate(-3deg);
-    animation: 60s homeHeroReverse infinite linear;
+    animation: 60000s homeHeroReverse infinite linear;
     transition: 2s all 0.5s cubic-bezier(0.15, 1.01, 1, 1);
     opacity: 0;
   }
@@ -38,11 +38,14 @@
     z-index: 10;
   }
   .hero-main-product {
-    height: auto;
-    width: 882px;
-    opacity: 0;
-    transform: scale(3);
-    transition: all 1.5s cubic-bezier(0.15, 1.01, 1, 1);
+    display: inline-block;
+    img {
+      height: auto;
+      width: 882px;
+      opacity: 0;
+      transform: scale(3);
+      transition: all 1.5s cubic-bezier(0.15, 1.01, 1, 1);
+    }
   }
   &.init {
     &:after,
@@ -50,20 +53,22 @@
       opacity: 1;
     }
     .hero-main-product {
-      opacity: 1;
-      transform: scale(1);
+      img {
+        opacity: 1;
+        transform: scale(1);
+      }
     }
   }
 }
 
 @keyframes homeHero {
-  100% {
-    background-position: 100vw 0;
+  to {
+    background-position: 100000vw 0;
   }
 }
 @keyframes homeHeroReverse {
-  100% {
-    background-position: -100vw 0;
+  to {
+    background-position: -100000vw 0;
   }
 }
 @keyframes marquee {
@@ -328,6 +333,7 @@
 .flex-row {
   flex-direction: row;
   display: flex;
+  flex-wrap: wrap;
 }
 .flex-col {
   flex-direction: column;
@@ -338,12 +344,13 @@
   background: #000;
 
   .instagram-gallery {
+    flex-wrap: wrap;
     @include fourk {
       max-width: 1843px;
       margin: auto;
     }
     .td1 {
-      flex: 0 1 76.8%;
+      flex: 0 1 100%;
       opacity: 0;
       transition: 0.5s all 0s;
     }
@@ -383,21 +390,34 @@
     }
     > .col1 {
       border-right: 20px solid #000;
+      flex: 0 1 47%;
     }
     > .col2 {
-      flex: auto;
+      flex: 0 1 53%;
+      justify-content: space-between;
       .row1 {
         justify-content: space-between;
         border-bottom: 20px solid #000;
-
+        .col1 {
+          flex: 0 1 49%;
+        }
         .col2 {
+          flex: 0 1 51%;
+
           border-left: 20px solid #000;
         }
       }
       .row2 {
+        .col1 {
+          flex: 0 1 36.7%;
+        }
         .col2 {
+          flex: 0 1 40.8%;
           border-left: 20px solid #000;
           border-right: 20px solid #000;
+        }
+        .col3 {
+          flex: 0 1 22.5%;
         }
       }
     }

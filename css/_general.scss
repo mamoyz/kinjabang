@@ -85,3 +85,11 @@ h6 {
     }
   }
 }
+
+.fadeIn {
+  opacity: 0;
+  transition: all 0.5s;
+  &.init {
+    opacity: 1;
+  }
+}
