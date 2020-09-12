@@ -1,13 +1,27 @@
 .product-hero {
   height: 727px;
-  overflow: visible;
+}
+
+.hero-main-product-sec {
+  position: absolute;
+  top: 165px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
   .hero-main-product {
     position: relative;
-
+    margin: auto;
+    display: inline-block;
     img {
       position: relative;
       top: 205px;
+      height: auto;
+      width: 882px;
       z-index: 10;
+      opacity: 0;
+      transform: scale(3);
+      transition: all 1.5s cubic-bezier(0.15, 1.01, 1, 1);
     }
     &:before {
       content: " ";
@@ -26,6 +40,10 @@
   }
   &.init {
     .hero-main-product {
+      img {
+        opacity: 1;
+        transform: scale(1);
+      }
       &:before {
         transform: translate(0, 0);
         opacity: 1;
@@ -33,7 +51,6 @@
     }
   }
 }
-
 .product-h2 {
   margin-top: 86px;
   color: #e16048;
@@ -61,7 +78,7 @@
   }
   h1 {
     font: 400 77px/77px $font-lemon;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     text-transform: uppercase;
     color: #000;
     margin-top: 17px;
@@ -163,7 +180,7 @@
     text-align: center;
   }
   .intructions-inner {
-    margin: 82px auto 0px;
+    margin: 82px auto 0;
     width: 955px;
     .intructions-row {
       display: flex;
@@ -214,7 +231,7 @@
     .about-noodle-item {
       flex: 0 1 calc(25% - 15px);
       max-width: calc(25% - 15px);
-      margin-bottom: 0px;
+      margin-bottom: 0;
 
       &.init {
         .item-img {

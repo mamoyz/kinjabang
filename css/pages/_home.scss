@@ -14,10 +14,11 @@
     left: 0;
     top: 0;
     z-index: 5;
-    transform: rotate(-3deg);
+    transform: rotate(-3deg) scale(1.2);
     animation: 30000s homeHero infinite forwards linear;
     transition: 2s all 0.5s cubic-bezier(0.15, 1.01, 1, 1);
     opacity: 0;
+    background-size: 331px 208px;
   }
   &:after {
     content: " ";
@@ -28,10 +29,11 @@
     left: 0;
     top: 0;
     z-index: 5;
-    transform: rotate(-3deg);
+    transform: rotate(-3deg) scale(1.2);
     animation: 60000s homeHeroReverse infinite linear;
     transition: 2s all 0.5s cubic-bezier(0.15, 1.01, 1, 1);
     opacity: 0;
+    background-size: 331px 208px;
   }
   .hero-content {
     position: relative;
@@ -220,9 +222,13 @@
 }
 .home-about {
   background: #000;
-
+  .home-sec-title {
+    border-top: 15px solid #000;
+    padding-top: 45px;
+  }
   .home-about-list {
     .home-about-item {
+      background: #000;
       border-bottom: 15px solid #000;
       overflow: hidden;
       position: relative;
@@ -264,7 +270,6 @@
         display: flex;
         position: relative;
         overflow: hidden;
-        background: #fff;
         justify-content: space-between;
       }
       .about-item-desc {
@@ -274,7 +279,7 @@
         justify-content: flex-start;
         padding-left: 327px;
         transition: all 0.3s;
-
+        background: #fff;
         .desc-inner {
           width: 800px;
           h3 {
