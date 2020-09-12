@@ -272,6 +272,7 @@
         overflow: hidden;
         justify-content: space-between;
       }
+
       .about-item-desc {
         flex: auto;
         display: flex;
@@ -280,6 +281,10 @@
         padding-left: 327px;
         transition: all 0.3s;
         background: #fff;
+        &:hover {
+          background: #fff url("../assets/img/texture-min.svg");
+          background-size: cover;
+        }
         .desc-inner {
           width: 800px;
           h3 {

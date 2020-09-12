@@ -185,6 +185,8 @@ h1, h2, h3, h4, h5, h6 { margin: 0; }
 
 .home-about .home-about-list .home-about-item .about-item-desc { -webkit-box-flex: 1; -ms-flex: auto; flex: auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; padding-left: 327px; -webkit-transition: all 0.3s; transition: all 0.3s; background: #fff; }
 
+.home-about .home-about-list .home-about-item .about-item-desc:hover { background: #fff url("../assets/img/texture-min.svg"); background-size: cover; }
+
 .home-about .home-about-list .home-about-item .about-item-desc .desc-inner { width: 800px; }
 
 .home-about .home-about-list .home-about-item .about-item-desc .desc-inner h3 { font: 400 66px/70px "lemon_milkbold"; color: #000; letter-spacing: 8.5px; text-transform: uppercase; position: relative; }
@@ -257,7 +259,7 @@ h1, h2, h3, h4, h5, h6 { margin: 0; }
 
 .about-noodle-item { -webkit-box-flex: 0; -ms-flex: 0 1 calc(50% - 10px); flex: 0 1 calc(50% - 10px); background: #fff; text-align: center; margin-bottom: 20px; }
 
-.about-noodle-item:not(.show):hover .item-content { background: url("../assets/img/texture-min.png") no-repeat; background-size: cover; }
+.about-noodle-item:not(.show):hover .item-content { background: url("../assets/img/texture-min.svg") no-repeat; background-size: cover; }
 
 .about-noodle-item .item-img { padding-top: 83%; background-size: cover; background-position: center center; position: relative; overflow: hidden; }
 
