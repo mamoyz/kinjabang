@@ -40,6 +40,11 @@ header {
       opacity: 0;
       transition: 1s all 1s;
       li {
+        &.current-menu-item {
+          a {
+            color: #df6048;
+          }
+        }
         a {
           color: #fff;
           text-transform: uppercase;
@@ -47,15 +52,21 @@ header {
           text-decoration: none;
           letter-spacing: 2.5px;
           padding: 12px 32px;
+          transition: all 0.2s ease-in-out;
+          border-bottom: 2px solid transparent;
+
+          &:hover {
+            border-color: #df6048;
+          }
         }
         &:first-child {
           a {
-            padding-left: 0;
+            // padding-left: 0;
           }
         }
         &:last-child {
           a {
-            padding-right: 0;
+            // padding-right: 0;
           }
         }
       }

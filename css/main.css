@@ -21,11 +21,11 @@ header .main-menu { color: #fff; }
 
 header .main-menu ul { list-style: none; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; padding: 10px 86px 0 0; -webkit-transform: translateY(-200%); transform: translateY(-200%); opacity: 0; -webkit-transition: 1s all 1s; transition: 1s all 1s; }
 
-header .main-menu ul li a { color: #fff; text-transform: uppercase; font: 400 18px/40px "lemon_milkbold"; text-decoration: none; letter-spacing: 2.5px; padding: 12px 32px; }
+header .main-menu ul li.current-menu-item a { color: #df6048; }
 
-header .main-menu ul li:first-child a { padding-left: 0; }
+header .main-menu ul li a { color: #fff; text-transform: uppercase; font: 400 18px/40px "lemon_milkbold"; text-decoration: none; letter-spacing: 2.5px; padding: 12px 32px; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; border-bottom: 2px solid transparent; }
 
-header .main-menu ul li:last-child a { padding-right: 0; }
+header .main-menu ul li a:hover { border-color: #df6048; }
 
 header.init .logo { -webkit-transform: translateX(0); transform: translateX(0); opacity: 1; }
 
