@@ -49,22 +49,35 @@ $(function () {
 
   /* 2. HOMEPAGE JS */
   /* 3. ABOUT US PAGE JS */
-  let tempScrollPos = 0;
-  $(".about-noodle-item .btn-fill").click(function (e) {
+  // let tempPos = 0;
+  $(".home-about-item .btn-fill").click(function (e) {
     e.preventDefault();
-    console.log(tempScrollPos);
-    if ($(this).hasClass("back")) {
-      $(".about-noodle-item").removeClass("show").removeClass("hide");
-      $(window).scrollTop(tempScrollPos);
-      return;
-    }
+    // tempPos = $(window).scrollTop();
     let item = $(this).closest(".about-noodle-item");
-    tempScrollPos = $(window).scrollTop();
-    $(".about-noodle-item").removeClass("show").addClass("hide");
-    $(item).removeClass("hide").addClass("show");
-    let secTop =
-      $(".about-noodle-item.show .item-content").offset().top -
-      $(window).innerHeight() * 0.5;
-    $(window).scrollTop(secTop);
+    let text = $(this).next(".item-content-text").html();
+    $("body").addClass("popup-visible");
+    $(".about-popup .popup-content .popup-content-inner").html(text);
+    setTimeout(() => {
+      $(".about-popup .popup-content").css({ transform: "translate(0,0)" });
+    }, 100);
+    setTimeout(() => {
+      $(".about-popup").addClass("visible");
+    }, 500);
+  });
+
+  $("#close-popup").click(function (e) {
+    e.preventDefault();
+    $("body").removeClass("popup-visible");
+    $(".about-popup .popup-content .popup-content-inner").html("");
+    setTimeout(() => {
+      $(".about-popup .popup-content").css({
+        transform: "translate(-105%, 0)",
+      });
+    }, 100);
+    setTimeout(() => {
+      $(".about-popup").removeClass("visible");
+    }, 500);
+    // $(window).scrollTop(tempPos);
+    // console.log(tempPos);
   });
 });
