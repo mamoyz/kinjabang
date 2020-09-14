@@ -4,6 +4,7 @@ $(function () {
   1. GENERAL JS
   2. HOMEPAGE JS
   3. ABOUT US PAGE JS
+  4. PRODUCT PAGE JS
   */
 
   /* 1. GENERAL JS */
@@ -79,5 +80,23 @@ $(function () {
     }, 500);
     // $(window).scrollTop(tempPos);
     // console.log(tempPos);
+  });
+
+  /* 4. PRODUCT PAGE JS */
+
+  $(".product-carousel").owlCarousel({
+    items: 1,
+    margin: 0,
+    autoHeight: false,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    nav: true,
+    center: true,
+    // autoplayHoverPause: true,
+    navText: [
+      "<img src='assets/img/left-arrow.svg'>",
+      "<img src='assets/img/right-arrow.svg'>",
+    ],
   });
 });

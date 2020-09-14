@@ -1,0 +1,55 @@
+.contact-product {
+  overflow: hidden;
+  .product-img {
+    text-align: center;
+    background: #fff url("../assets/img/texture-min.svg") !important;
+    background-size: cover !important;
+    border-left: 15px solid #000;
+    .contact-main-product {
+      width: 1150px;
+      margin-top: 105px;
+      margin-bottom: 53px;
+    }
+  }
+}
+
+.contact-form {
+  border-top: 15px solid #000;
+  position: relative;
+  padding: 170px 215px 90px;
+  .form-group {
+    margin-bottom: 61px;
+    > label {
+      font: 400 28px/30px $font-lemon;
+      text-transform: uppercase;
+      color: #000;
+      display: block;
+      margin-bottom: 25px;
+      span {
+      }
+    }
+    .kinjabang-input {
+      border: 6px solid #000;
+      border-radius: 8px;
+      width: 100%;
+      padding: 34px 25px 23px 25px;
+      font: 400 28px/28px $font-lemon;
+      text-transform: uppercase;
+    }
+    input[type="submit"] {
+      border: 6px solid #000;
+      border-radius: 8px;
+      width: 100%;
+      padding: 34px 25px 23px 25px;
+      font: 400 28px/28px $font-lemon;
+      text-transform: uppercase;
+      background: #fff;
+      outline: 0;
+      -webkit-appearance: none;
+      cursor: pointer;
+    }
+    textarea {
+      height: 230px;
+    }
+  }
+}

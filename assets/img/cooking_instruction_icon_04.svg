@@ -1,49 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="569.2" height="569.2" viewBox="0 0 569.2 569.2">
-  <g id="cooking_instruction_icon_04" transform="translate(-432.8 -432.8)">
-    <g id="Group_38" data-name="Group 38">
-      <path id="Path_25" data-name="Path 25" d="M920.9,1002h-407a81.088,81.088,0,0,1-81.1-81.1v-407a81.088,81.088,0,0,1,81.1-81.1h407a81.088,81.088,0,0,1,81.1,81.1v407A81.088,81.088,0,0,1,920.9,1002Z" fill="#de6047" fill-rule="evenodd"/>
-    </g>
-    <g id="Group_53" data-name="Group 53">
+<svg xmlns="http://www.w3.org/2000/svg" width="879" height="879" viewBox="0 0 879 879">
+  <g id="cooking_instruction_icon_04" transform="translate(-277.9 -277.9)">
+    <rect id="Rectangle_4" data-name="Rectangle 4" width="879" height="879" transform="translate(277.9 277.9)" fill="#de6047"/>
+    <g id="Group_51" data-name="Group 51">
+      <g id="Group_38" data-name="Group 38">
+        <g id="Group_37" data-name="Group 37">
+          <path id="Path_22" data-name="Path 22" d="M717.5,965.3c-116.1,0-210.6-94.5-210.6-210.5V745H928v9.9C927.9,870.9,833.5,965.3,717.5,965.3ZM527.1,764.8c5.2,100.5,88.6,180.8,190.4,180.8s185.2-80.2,190.4-180.8Z" fill="#fff"/>
+          <path id="Path_23" data-name="Path 23" d="M717.5,972.1c-119.9,0-217.4-97.5-217.4-217.4V737.9H934.7v16.8C934.7,874.6,837.2,972.1,717.5,972.1ZM513.8,751.6v3.1c0,112.3,91.4,203.7,203.7,203.7S921.2,867,921.2,754.7v-3.1ZM717.5,952.3A197.281,197.281,0,0,1,520.3,765.1l-.4-7.2H915l-.4,7.2A197.327,197.327,0,0,1,717.5,952.3ZM534.4,771.6a183.866,183.866,0,0,0,366.2,0Z" fill="#fff"/>
+        </g>
+      </g>
       <g id="Group_40" data-name="Group 40">
         <g id="Group_39" data-name="Group 39">
-          <path id="Path_26" data-name="Path 26" d="M706.9,903.3c-89.1,0-161.6-72.5-161.6-161.5v-7.6H868.4v7.6C868.4,830.8,795.9,903.3,706.9,903.3ZM560.8,749.4c4,77.1,68,138.7,146.1,138.7S849,826.6,853,749.4Z" fill="#fff"/>
-          <path id="Path_27" data-name="Path 27" d="M706.9,908.5c-92,0-166.8-74.8-166.8-166.8V728.8H873.6v12.9C873.6,833.7,798.8,908.5,706.9,908.5ZM550.6,739.3v2.4c0,86.2,70.1,156.3,156.3,156.3s156.3-70.1,156.3-156.3v-2.4Zm156.3,154A151.362,151.362,0,0,1,555.6,749.7l-.3-5.5H858.5l-.3,5.5A151.5,151.5,0,0,1,706.9,893.3ZM566.4,754.6a141.09,141.09,0,0,0,281,0Z" fill="#fff"/>
+          <path id="Path_24" data-name="Path 24" d="M587.3,595.6l-9.8-17.2L765.7,471.9l9.8,17.2Z" fill="#fff"/>
+          <path id="Path_25" data-name="Path 25" d="M584.7,604.9l-16.4-29.1L768.5,462.7l16.4,29.2Zm2-24,3.1,5.3,176.3-99.6-3.1-5.5Z" fill="#fff"/>
         </g>
       </g>
       <g id="Group_42" data-name="Group 42">
         <g id="Group_41" data-name="Group 41">
-          <path id="Path_28" data-name="Path 28" d="M607,619.6l-7.5-13.2,144.4-81.7,7.5,13.2Z" fill="#fff"/>
-          <path id="Path_29" data-name="Path 29" d="M605,626.7l-12.6-22.3L746,517.6,758.6,540Zm1.6-18.4,2.4,4.1L744.3,536l-2.4-4.2Z" fill="#fff"/>
+          <rect id="Rectangle_5" data-name="Rectangle 5" width="238.6" height="19.8" transform="translate(663.9 637.3)" fill="#fff"/>
+          <path id="Path_26" data-name="Path 26" d="M909.3,663.9H657.1V630.4H909.3ZM670.7,650.3H895.6V644H670.7Z" fill="#fff"/>
         </g>
       </g>
       <g id="Group_44" data-name="Group 44">
         <g id="Group_43" data-name="Group 43">
-          <rect id="Rectangle_1" data-name="Rectangle 1" width="183.1" height="15.2" transform="translate(665.8 651.6)" fill="#fff"/>
-          <path id="Path_30" data-name="Path 30" d="M854.1,672H660.6V646.3H854.1ZM671,661.6H843.6v-4.8H671Z" fill="#fff"/>
+          <rect id="Rectangle_6" data-name="Rectangle 6" width="9.9" height="163.7" transform="translate(585.6 587)" fill="#fff"/>
+          <rect id="Rectangle_7" data-name="Rectangle 7" width="23.6" height="177.4" transform="translate(578.8 580.2)" fill="#fff"/>
         </g>
       </g>
       <g id="Group_46" data-name="Group 46">
         <g id="Group_45" data-name="Group 45">
-          <rect id="Rectangle_2" data-name="Rectangle 2" width="7.6" height="125.6" transform="translate(605.7 613)" fill="#fff"/>
-          <rect id="Rectangle_3" data-name="Rectangle 3" width="18.1" height="136.1" transform="translate(600.5 607.8)" fill="#fff"/>
+          <rect id="Rectangle_8" data-name="Rectangle 8" width="9.9" height="188.3" transform="translate(628.3 562.4)" fill="#fff"/>
+          <rect id="Rectangle_9" data-name="Rectangle 9" width="23.6" height="201.9" transform="translate(621.4 555.6)" fill="#fff"/>
         </g>
       </g>
       <g id="Group_48" data-name="Group 48">
         <g id="Group_47" data-name="Group 47">
-          <rect id="Rectangle_4" data-name="Rectangle 4" width="7.6" height="144.5" transform="translate(638.5 594.1)" fill="#fff"/>
-          <rect id="Rectangle_5" data-name="Rectangle 5" width="18.1" height="154.9" transform="translate(633.2 588.9)" fill="#fff"/>
+          <rect id="Rectangle_10" data-name="Rectangle 10" width="9.9" height="103.7" transform="translate(670.9 647)" fill="#fff"/>
+          <rect id="Rectangle_11" data-name="Rectangle 11" width="23.6" height="117.3" transform="translate(664.2 640.2)" fill="#fff"/>
         </g>
       </g>
       <g id="Group_50" data-name="Group 50">
         <g id="Group_49" data-name="Group 49">
-          <rect id="Rectangle_6" data-name="Rectangle 6" width="7.6" height="79.6" transform="translate(671.2 659)" fill="#fff"/>
-          <rect id="Rectangle_7" data-name="Rectangle 7" width="18.1" height="90" transform="translate(666 653.8)" fill="#fff"/>
-        </g>
-      </g>
-      <g id="Group_52" data-name="Group 52">
-        <g id="Group_51" data-name="Group 51">
-          <rect id="Rectangle_8" data-name="Rectangle 8" width="7.6" height="79.6" transform="translate(704 659)" fill="#fff"/>
-          <rect id="Rectangle_9" data-name="Rectangle 9" width="18.1" height="90" transform="translate(698.8 653.8)" fill="#fff"/>
+          <rect id="Rectangle_12" data-name="Rectangle 12" width="9.9" height="103.7" transform="translate(713.7 647)" fill="#fff"/>
+          <rect id="Rectangle_13" data-name="Rectangle 13" width="23.6" height="117.3" transform="translate(706.9 640.2)" fill="#fff"/>
         </g>
       </g>
     </g>

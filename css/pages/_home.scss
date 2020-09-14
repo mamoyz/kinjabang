@@ -20,11 +20,10 @@ body {
     left: 0;
     top: 0;
     z-index: 5;
-    transform: rotate(-3deg) scale(1.2);
     animation: 30000s homeHero infinite forwards linear;
     transition: 2s all 0.5s cubic-bezier(0.15, 1.01, 1, 1);
     opacity: 0;
-    background-size: 331px 208px;
+    background-size: 672px 269px;
   }
   &:after {
     content: " ";
@@ -35,11 +34,10 @@ body {
     left: 0;
     top: 0;
     z-index: 5;
-    transform: rotate(-3deg) scale(1.2);
     animation: 60000s homeHeroReverse infinite linear;
     transition: 2s all 0.5s cubic-bezier(0.15, 1.01, 1, 1);
     opacity: 0;
-    background-size: 331px 208px;
+    background-size: 672px 269px;
   }
   .hero-content {
     position: relative;
@@ -58,7 +56,7 @@ body {
   &.init {
     &:after,
     &:before {
-      opacity: 1;
+      opacity: 0.7;
     }
     .hero-main-product {
       img {
