@@ -16,7 +16,7 @@ $(function () {
   $(window).on("load", function () {
     $(".autoplayed").addClass("init");
   });
-  $(window).on("scroll", function () {
+  $(window).on("scroll", function (e) {
     let wtop = $(this).scrollTop();
     if (wtop > 200) {
       $("header").addClass("sticky");
@@ -62,7 +62,7 @@ $(function () {
       $("#close-popup, .about-popup")
         .removeClass("left-to-right")
         .addClass("right-to-left");
-      $("body").addClass("popup-visible");
+      $("body, html").addClass("popup-visible");
       $(".about-popup .popup-content .popup-content-inner").html(text);
       $(".about-popup .popup-content").css({
         transform: "translate(105vw,0)",
@@ -83,7 +83,7 @@ $(function () {
       $("#close-popup, .about-popup")
         .removeClass("right-to-left")
         .addClass("left-to-right");
-      $("body").addClass("popup-visible");
+      $("body , html").addClass("popup-visible");
       $(".about-popup .popup-content .popup-content-inner").html(text);
       $(".about-popup .popup-content").css({
         transform: "translate(-105vw,0)",
@@ -121,7 +121,7 @@ $(function () {
       }
     }, 100);
     setTimeout(() => {
-      $("body").removeClass("popup-visible");
+      $("body, html").removeClass("popup-visible");
       $(this).attr("class", "");
     }, 500);
 

@@ -523,11 +523,14 @@ body {
   }
 }
 
-.popup-visible {
+body.popup-visible {
   .about-popup {
     display: flex;
     .popup-content {
       // transform: translate(0, 0);
     }
   }
+}
+html.popup-visible {
+  overflow: hidden;
 }
