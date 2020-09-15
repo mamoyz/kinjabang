@@ -450,12 +450,20 @@ body {
   z-index: 500;
   align-items: center;
   justify-content: flex-start;
-  background: rgba(255, 255, 255, 0.8);
   display: none;
+  &.right-to-left {
+    button {
+      right: 60px;
+    }
+  }
+  &.left-to-right {
+    button {
+      left: 1240px;
+    }
+  }
   button {
     position: fixed;
     top: 20%;
-    left: 1260px;
     width: 50px;
     height: 50px;
     background: #000;
@@ -489,7 +497,7 @@ body {
       text-decoration: none;
     }
     background: #000;
-    width: 1340px;
+    width: 1320px;
     padding: 100px 160px 130px 140px;
     font: 400 24px/55px $font-lemon;
     text-transform: uppercase;
@@ -497,8 +505,8 @@ body {
     height: 70%;
     overflow-y: scroll;
     position: relative;
-    transform: translate(-105%, 0);
-    transition: all 0.5s;
+    transform: translate(-105vw, 0);
+
     &::-webkit-scrollbar {
       width: 5px;
     }
