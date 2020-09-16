@@ -93,3 +93,73 @@ h6 {
     opacity: 1;
   }
 }
+
+.video-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 200;
+  background: transparent;
+  display: none;
+  &.playing {
+    display: block;
+    background: rgba(0, 0, 0, 0.85);
+  }
+  button {
+    position: fixed;
+    top: 50px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    -webkit-appearance: none;
+    border: none;
+    cursor: pointer;
+    z-index: 600;
+    outline: 0;
+    right: 50px;
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .popup-logo{
+    width: 10%;
+    left: 30px;
+    position: fixed;
+    bottom: 30px;
+  }
+  .popup-icons{
+    width: 10%;
+    right: 30px;
+    position: fixed;
+    bottom: 30px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    li{
+      flex:0 1 calc(33.33% - 10px);
+    }
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  .popup-content-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px 15%;
+
+    video {
+      width: 100%;
+      outline: 0;
+    }
+  }
+}

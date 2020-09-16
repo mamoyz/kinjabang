@@ -49,9 +49,42 @@ $(function () {
   });
 
   /* 2. HOMEPAGE JS */
+  $(".btn-video").click(function (e) {
+    e.preventDefault();
+    $("html").addClass("popup-visible");
+    let videoSrc = $(this).data("video");
+    $(".video-popup").addClass("playing");
+    $(".video-popup .popup-content-inner").html(
+      '<video controls autoplay><source src="' +
+        videoSrc +
+        '" type="video/mp4"></video>'
+    );
+  });
+  $(document).on("click", ".video-popup .popup-content-inner video", function (e) {
+    e.stopPropagation();
+    $("html").removeClass("popup-visible");
+
+  });
+  $(document).on("click", ".video-popup .popup-content-inner", function (e) {
+    e.preventDefault();
+    $(".video-popup").removeClass("playing");
+    $(".video-popup .popup-content-inner").html("");
+    $("html").removeClass("popup-visible");
+
+  });
+  $(document).on("click", "#close-video", function (e) {
+    e.preventDefault();
+    $(".video-popup").removeClass("playing");
+    $(".video-popup .popup-content-inner").html("");
+    $("html").removeClass("popup-visible");
+
+  });
+
+
   /* 3. ABOUT US PAGE JS */
   // let tempPos = 0;
-  $(".home-about-item .btn-fill").click(function (e) {
+
+  $(".home-about-item .btn-popup").click(function (e) {
     e.preventDefault();
     // tempPos = $(window).scrollTop();
     let item = $(this).closest(".home-about-item");

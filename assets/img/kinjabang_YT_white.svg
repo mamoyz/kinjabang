@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g id="kinjabang_YT_white" transform="translate(-85.7 -82.7)">
+    <g id="Group_1" data-name="Group 1" transform="translate(83.7 83.7)">
+      <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(2 -1)" fill="none" stroke="#fff" stroke-width="2">
+        <circle cx="25" cy="25" r="25" stroke="none"/>
+        <circle cx="25" cy="25" r="24" fill="none"/>
+      </g>
+      <path id="Path_34" data-name="Path 34" d="M448,534.35V527l6.362,3.668Zm14.18-9.569a3.068,3.068,0,0,0-2.163-2.163c-1.913-.518-9.569-.518-9.569-.518s-7.661,0-9.569.518a3.068,3.068,0,0,0-2.163,2.163,33.792,33.792,0,0,0,0,11.785,3.069,3.069,0,0,0,2.163,2.163c1.913.509,9.569.509,9.569.509s7.661,0,9.569-.509a3.069,3.069,0,0,0,2.163-2.163,31.511,31.511,0,0,0,.518-5.892,31.908,31.908,0,0,0-.518-5.892" transform="translate(-423.7 -507.1)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
