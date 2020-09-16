@@ -43,11 +43,17 @@ header {
         &.shop-now {
           a {
             padding: 25px 53px 20px;
-            background: #fff;
+            background: #fff url("../assets/img/shop-texture.svg");
             color: #000;
+            background-size: cover;
+            background-position: 0 0;
+            animation:3000s shopbutton infinite linear;
             &:hover {
               border-color: transparent;
-              background: #df6048;
+              // background: #df6048;
+            background: #df6048 url("../assets/img/shop-texture.svg");
+
+            background-size: cover;
               color: #fff;
             }
           }
@@ -95,5 +101,20 @@ header {
         opacity: 1;
       }
     }
+  }
+}
+
+@keyframes shopbutton{
+  0%{
+    background-position: 0 0;
+
+  }
+  50%{
+    background-position: 0 50000%;
+
+  }
+  100%{
+    background-position: 0 0;
+
   }
 }

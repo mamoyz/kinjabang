@@ -1,5 +1,9 @@
+.product-hero {
+  height: 470px;
+}
 .contact-product {
   overflow: hidden;
+  border-bottom: 15px solid #000;
   .product-img {
     text-align: center;
     background: #fff url("../assets/img/texture-min.svg") !important;
@@ -9,6 +13,17 @@
       width: 1150px;
       margin-top: 105px;
       margin-bottom: 53px;
+      opacity: 0;
+      transform: scale(0.5) translate(0,50px);
+      transition: all 1s;
+    }
+  }
+  .container-fluid{
+    &.init{
+      .contact-main-product{
+        opacity: 1;
+        transform: scale(1) translate(0,0);
+      }
     }
   }
 }
