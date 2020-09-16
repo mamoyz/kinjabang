@@ -298,7 +298,7 @@ h1, h2, h3, h4, h5, h6 { margin: 0; }
 
 .about-popup.visible button { display: block; }
 
-.about-popup .popup-content { color: #fff; background: #000; width: 1320px; padding: 100px 160px 130px 140px; font: 400 24px/55px "lemon_milkbold"; text-transform: uppercase; letter-spacing: 4px; height: 70%; overflow-y: scroll; position: relative; -webkit-transform: translate(-105vw, 0); transform: translate(-105vw, 0); scrollbar-width: thin; scrollbar-color: #000 #000; }
+.about-popup .popup-content { color: #fff; background: #000; width: 1337px; padding: 100px 160px 130px 140px; font: 400 24px/55px "lemon_milkbold"; text-transform: uppercase; letter-spacing: 4px; height: 70%; overflow-y: scroll; position: relative; -webkit-transform: translate(-105vw, 0); transform: translate(-105vw, 0); scrollbar-width: thin; scrollbar-color: #000 #000; }
 
 .about-popup .popup-content a { color: #fff; text-decoration: none; }
 
