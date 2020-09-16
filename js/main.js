@@ -54,29 +54,40 @@ $(function () {
     $("html").addClass("popup-visible");
     let videoSrc = $(this).data("video");
     $(".video-popup").addClass("playing");
+    setTimeout(() => {
+    $(".video-popup").addClass("visible");
+      
+    }, 100);
     $(".video-popup .popup-content-inner").html(
       '<video controls autoplay><source src="' +
         videoSrc +
         '" type="video/mp4"></video>'
     );
+    $(this).closest('.about-item-desc').addClass('active');
   });
   $(document).on("click", ".video-popup .popup-content-inner video", function (e) {
     e.stopPropagation();
     $("html").removeClass("popup-visible");
+    $('.about-item-desc').removeClass('active');
+
 
   });
   $(document).on("click", ".video-popup .popup-content-inner", function (e) {
     e.preventDefault();
-    $(".video-popup").removeClass("playing");
+    $(".video-popup").removeClass("playing").removeClass("visible");
     $(".video-popup .popup-content-inner").html("");
     $("html").removeClass("popup-visible");
+    $('.about-item-desc').removeClass('active');
+
 
   });
   $(document).on("click", "#close-video", function (e) {
     e.preventDefault();
-    $(".video-popup").removeClass("playing");
+    $(".video-popup").removeClass("playing").removeClass("visible");
     $(".video-popup .popup-content-inner").html("");
     $("html").removeClass("popup-visible");
+    $('.about-item-desc').removeClass('active');
+
 
   });
 
@@ -90,6 +101,8 @@ $(function () {
     let item = $(this).closest(".home-about-item");
     let itemIndex = $(item).index() % 2;
     let text = $(this).next(".item-content-text").html();
+    $(this).closest('.about-item-desc').addClass('active');
+
     if (itemIndex) {
       $(".about-popup").css({ "justify-content": "flex-end" });
       $("#close-popup, .about-popup")
@@ -137,6 +150,7 @@ $(function () {
 
   $("#close-popup").click(function (e) {
     e.preventDefault();
+    $('.about-item-desc').removeClass('active');
 
     $(".about-popup .popup-content .popup-content-inner").html("");
     $(".about-popup").removeClass("visible");

@@ -103,10 +103,7 @@ h6 {
   z-index: 200;
   background: transparent;
   display: none;
-  &.playing {
-    display: block;
-    background: rgba(0, 0, 0, 0.85);
-  }
+ 
   button {
     position: fixed;
     top: 50px;
@@ -129,6 +126,9 @@ h6 {
     left: 30px;
     position: fixed;
     bottom: 30px;
+    opacity: 0;
+    transform: translate(0,200%);
+    transition: 1s all 2s;
   }
   .popup-icons{
     width: 10%;
@@ -141,6 +141,9 @@ h6 {
     justify-content: space-between;
     padding: 0;
     margin: 0;
+    opacity: 0;
+    transform: translate(0,200%);
+    transition: 1s all 2s;
     li{
       flex:0 1 calc(33.33% - 10px);
     }
@@ -149,6 +152,11 @@ h6 {
       height: auto;
     }
   }
+  &.playing {
+    display: block;
+    background: rgba(0, 0, 0, 0.85);
+  }
+
   .popup-content-inner {
     width: 100%;
     height: 100%;
@@ -160,6 +168,17 @@ h6 {
     video {
       width: 100%;
       outline: 0;
+      opacity: 0;
+    transition: all 2s;
+      transform: translate(0,-50px) scale(2);
+    }
+  }
+  &.visible{
+    .popup-content-inner video,
+    .popup-logo,
+    .popup-icons{
+      opacity: 1;
+      transform: translate(0,0) scale(1);
     }
   }
 }
