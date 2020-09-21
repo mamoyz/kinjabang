@@ -47,13 +47,13 @@ header {
             color: #000;
             background-size: cover;
             background-position: 0 0;
-            animation:3000s shopbutton infinite linear;
+            // animation:3000s shopbutton infinite linear;
             &:hover {
               border-color: transparent;
               // background: #df6048;
-            background: #df6048 url("../assets/img/shop-texture.svg");
+              background: #df6048 url("../assets/img/shop-texture.svg");
 
-            background-size: cover;
+              background-size: cover;
               color: #fff;
             }
           }
@@ -104,17 +104,14 @@ header {
   }
 }
 
-@keyframes shopbutton{
-  0%{
+@keyframes shopbutton {
+  0% {
     background-position: 0 0;
-
   }
-  50%{
+  50% {
     background-position: 0 50000%;
-
   }
-  100%{
+  100% {
     background-position: 0 0;
-
   }
 }
