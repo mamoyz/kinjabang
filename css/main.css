@@ -218,11 +218,11 @@ h1, h2, h3, h4, h5, h6 { margin: 0; }
 
 .home-about .home-about-list .home-about-item .about-item-desc { -webkit-box-flex: 1; -ms-flex: auto; flex: auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; padding-left: 327px; -webkit-transition: all 0.3s; transition: all 0.3s; background: #fff; position: relative; }
 
-.home-about .home-about-list .home-about-item .about-item-desc:before { content: " "; background: url("../assets/img/texture-min.svg") no-repeat; background-size: cover; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-position: center; opacity: 0; -webkit-transition: all 0.3s; transition: all 0.3s; }
+.home-about .home-about-list .home-about-item .about-item-desc video { position: absolute; top: 0; left: 0; width: 100%; z-index: 0; -webkit-transition: all 0.3s; transition: all 0.3s; opacity: 0; }
 
-.home-about .home-about-list .home-about-item .about-item-desc.active:before { opacity: 1; }
+.home-about .home-about-list .home-about-item .about-item-desc.active video { opacity: 1; }
 
-.home-about .home-about-list .home-about-item .about-item-desc:hover:before { opacity: 1; }
+.home-about .home-about-list .home-about-item .about-item-desc:hover video { opacity: 1; }
 
 .home-about .home-about-list .home-about-item .about-item-desc .desc-inner { width: 800px; }
 
@@ -378,9 +378,9 @@ html.popup-visible { overflow: hidden; }
 
 .instructions .intructions-inner .intructions-row { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: stretch; -ms-flex-align: stretch; align-items: stretch; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; border-bottom: 15px solid #000; }
 
-.instructions .intructions-inner .intructions-row:hover > div:nth-child(2):before { opacity: 0.5; }
+.instructions .intructions-inner .intructions-row:hover > div:nth-child(2) video { opacity: 0.5; }
 
-.instructions .intructions-inner .intructions-row > div { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.instructions .intructions-inner .intructions-row > div { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; overflow: hidden; }
 
 .instructions .intructions-inner .intructions-row:last-child { border-bottom: none; }
 
@@ -404,7 +404,7 @@ html.popup-visible { overflow: hidden; }
 
 .instructions .intructions-inner .intructions-row div:nth-child(2) { -webkit-box-flex: 0; -ms-flex: 0 1 1484px; flex: 0 1 1484px; letter-spacing: 2px; padding: 0 175px; font: 400 25.5px/37px "lemon_regular"; color: #000; text-transform: uppercase; position: relative; }
 
-.instructions .intructions-inner .intructions-row div:nth-child(2):before { content: " "; background: url("../assets/img/texture-min.svg") no-repeat; background-size: cover; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-position: center; opacity: 0; -webkit-transition: all 0.3s; transition: all 0.3s; }
+.instructions .intructions-inner .intructions-row div:nth-child(2) video { position: absolute; top: 0; left: 0; width: 100%; z-index: 0; -webkit-transition: all 0.3s; transition: all 0.3s; opacity: 0; }
 
 .instructions .intructions-inner .intructions-row div:nth-child(2) p { margin: 0; }
 
