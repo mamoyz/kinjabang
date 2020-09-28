@@ -1,5 +1,9 @@
 .product-hero {
   height: 727px;
+  @include down-sm {
+    height: auto;
+    padding: 39vw 0 27vw;
+  }
 }
 
 .hero-main-product-sec {
@@ -9,6 +13,9 @@
   right: 0;
   margin: auto;
   text-align: center;
+  @include down-sm {
+    top: 18vw;
+  }
   .hero-main-product {
     position: relative;
     margin: auto;
@@ -22,6 +29,10 @@
       opacity: 0;
       transform: scale(3);
       transition: all 1.5s cubic-bezier(0.15, 1.01, 1, 1);
+      @include down-sm {
+        width: 58vw;
+        top: 21.35vw;
+      }
     }
     &:before {
       content: " ";
@@ -36,6 +47,12 @@
       transform: translate(50%, 0);
       opacity: 0;
       transition: 1s all 1s;
+      @include down-sm {
+        width: 35vw;
+        left: -12vw;
+        top: 30vw;
+        height: 52.08vw;
+      }
     }
   }
   &.init {
@@ -61,6 +78,16 @@
   &.facts {
     margin-top: 90px;
     margin-bottom: -5px;
+    @include down-sm {
+      margin-top: 10vw;
+      margin-bottom: 3vw;
+    }
+  }
+  @include down-sm {
+    margin-top: 15vw;
+    font: 400 5.5vw/8vw $font-lemon;
+    letter-spacing: 0.6vw;
+    margin-bottom: 3vw;
   }
 }
 .product-info {
@@ -69,8 +96,15 @@
   padding-bottom: 134px;
   position: relative;
   z-index: 10;
+  @include down-sm {
+    padding-top: 28vw;
+    padding-bottom: 9vw;
+  }
   #mandarin-style {
     width: 380px;
+    @include down-sm {
+      width: 40vw;
+    }
     opacity: 0;
     transition: all 0.3s;
     &.init {
@@ -90,12 +124,24 @@
       opacity: 1;
       letter-spacing: 46px;
     }
+    @include down-sm {
+      font: 400 5vw/5vw $font-lemon;
+      margin-top: 1vw;
+      margin-bottom: 5vw;
+      &.init {
+        letter-spacing: 2vw;
+      }
+    }
   }
   #logoimg {
     width: 90px;
     opacity: 0;
     transition: 0.5s all 0.5s;
     transform: translate(0, 50px);
+    @include down-sm {
+      width: 10vw;
+      transform: translate(0, 5.21vw);
+    }
     &.init {
       opacity: 1;
       transform: translate(0, 0);
@@ -106,6 +152,10 @@
     margin: 33px auto 0;
     display: flex;
     justify-content: space-between;
+    @include down-sm {
+      width: 75vw;
+      margin: 5vw auto 0;
+    }
     img {
       width: 31%;
       opacity: 0;
@@ -133,9 +183,18 @@
     width: 860px;
     margin: auto;
     letter-spacing: 3.5px;
+    @include down-sm {
+      font: 400 4vw/5.5vw $font-regular;
+      width: 95%;
+      letter-spacing: 0.3vw;
+    }
   }
   #nfp {
     width: 1030px;
+    @include down-sm {
+      width: 90%;
+      margin: auto;
+    }
   }
 }
 
@@ -147,7 +206,11 @@
   height: 760px;
   border-top: 15px solid #000;
   border-bottom: 15px solid #000;
-
+  @include down-sm {
+    height: 50vw;
+    border-top: 1.04vw solid #000;
+    border-bottom: 1.04vw solid #000;
+  }
   &:before {
     content: " ";
     background: #fff;
@@ -178,8 +241,10 @@
 }
 .instructions-heading {
   border-top: 15px solid #000;
-
   padding: 60px 0 20px;
+  @include down-sm {
+    border-top: 0;
+  }
   h2 {
     font: 400 170px/370px $font-lemon;
     text-transform: uppercase;
@@ -188,6 +253,10 @@
     left: 0;
     position: relative;
     animation: 15s marquee infinite linear;
+    @include down-sm {
+      font: 400 8vw/18vw $font-lemon;
+      padding: 10vw 0;
+    }
   }
 }
 .instructions {
@@ -204,9 +273,16 @@
       align-items: stretch;
       justify-content: space-between;
       border-bottom: 15px solid #000;
+      @include down-sm {
+        justify-content: center;
+        align-items: center;
+        border-bottom: 2vw solid #000;
+      }
       &:hover {
-        > div:nth-child(2) video {
-          opacity: 0.5;
+        @include up-sm {
+          > div:nth-child(2) video {
+            opacity: 0.5;
+          }
         }
       }
       > div {
@@ -219,6 +295,9 @@
       }
       &:nth-child(even) {
         flex-direction: row;
+        @include down-sm {
+          flex-direction: column;
+        }
         div {
           &:nth-child(1) {
             transform: translate(-50px, 0);
@@ -230,6 +309,9 @@
       }
       &:nth-child(odd) {
         flex-direction: row-reverse;
+        @include down-sm {
+          flex-direction: column;
+        }
         div {
           &:nth-child(1) {
             transform: translate(50px, 0);
@@ -244,9 +326,16 @@
         transition: all 0.4s;
         &:nth-child(1) {
           flex: 0 1 436px;
+          @include down-sm {
+            flex: auto;
+          }
           img {
             display: block;
             width: 100%;
+            @include down-sm {
+              width: 40%;
+              margin: 20vw auto 5vw;
+            }
           }
         }
         &:nth-child(2) {
@@ -257,6 +346,13 @@
           color: #000;
           text-transform: uppercase;
           position: relative;
+          @include down-sm {
+            flex: auto;
+            padding: 0 5vw 10vw;
+            font: 400 4vw/6vw $font-regular;
+            text-align: center;
+            letter-spacing: 0.8vw;
+          }
           video {
             position: absolute;
             top: 0;
@@ -360,7 +456,7 @@
 
 .product-carousel {
   height: 760px;
-
+  position: static !important;
   .owl-nav {
     .owl-prev {
       left: 85px;
@@ -389,6 +485,221 @@
     }
     button {
       outline: 0;
+    }
+    @include down-sm {
+      .owl-prev {
+        left: 0;
+        top: calc(50% - 4vw);
+        img {
+          width: 8vw;
+        }
+      }
+      .owl-next {
+        right: 0;
+        top: calc(50% - 4vw);
+        img {
+          width: 8vw;
+        }
+      }
+      img {
+        &:hover {
+        }
+      }
+      button {
+      }
+    }
+  }
+}
+
+@include desk {
+  .product-hero {
+    height: 37.86vw;
+  }
+
+  .hero-main-product-sec {
+    top: 8.59vw;
+    .hero-main-product {
+      img {
+        top: 10.68vw;
+        width: 45.94vw;
+      }
+      &:before {
+        width: 21.35vw;
+        height: 26.04vw;
+        left: -11.61vw;
+        top: 25.52vw;
+      }
+    }
+  }
+  .product-h2 {
+    margin-top: 4.48vw;
+    font: 400 1.67vw/1.77vw $font-lemon;
+    letter-spacing: 0.26vw;
+    margin-bottom: 1.56vw;
+    &.facts {
+      margin-top: 4.69vw;
+      margin-bottom: -0.26vw;
+    }
+  }
+  .product-info {
+    padding-top: 22.4vw;
+    padding-bottom: 6.98vw;
+    #mandarin-style {
+      width: 19.79vw;
+    }
+    h1 {
+      font: 400 4.01vw/4.01vw $font-lemon;
+      margin-top: 0.89vw;
+      margin-bottom: 4.01vw;
+      &.init {
+        letter-spacing: 2.4vw;
+      }
+    }
+    #logoimg {
+      width: 4.69vw;
+      transform: translate(0, 2.6vw);
+      &.init {
+      }
+    }
+    #callouts {
+      width: 23.44vw;
+      margin: 1.72vw auto 0;
+      img {
+        &:nth-child(1) {
+          transform: translate(5.21vw, 0);
+        }
+        &:nth-child(2) {
+          transform: translate(0, 2.6vw);
+        }
+        &:nth-child(3) {
+          transform: translate(-5.21vw, 0);
+        }
+      }
+    }
+
+    .product-info-content {
+      font: 400 1.04vw/1.98vw $font-regular;
+      width: 44.79vw;
+      letter-spacing: 0.18vw;
+    }
+    #nfp {
+      width: 53.65vw;
+    }
+  }
+
+  .product-middle {
+    height: 39.58vw;
+    border-top: 0.78vw solid #000;
+    border-bottom: 0.78vw solid #000;
+  }
+  .instructions-heading {
+    border-top: 0.78vw solid #000;
+
+    padding: 3.13vw 0 1.04vw;
+    h2 {
+      font: 400 8.85vw/19.27vw $font-lemon;
+    }
+  }
+  .instructions {
+    .intructions-inner {
+      .intructions-row {
+        border-bottom: 0.78vw solid #000;
+
+        &:nth-child(even) {
+          div {
+            &:nth-child(1) {
+              transform: translate(-2.6vw, 0);
+            }
+            &:nth-child(2) {
+              transform: translate(2.6vw, 0);
+            }
+          }
+        }
+        &:nth-child(odd) {
+          div {
+            &:nth-child(1) {
+              transform: translate(2.6vw, 0);
+            }
+            &:nth-child(2) {
+              transform: translate(-2.6vw, 0);
+            }
+          }
+        }
+        div {
+          &:nth-child(1) {
+            flex: 0 1 22.71vw;
+            img {
+            }
+          }
+          &:nth-child(2) {
+            flex: 0 1 77.29vw;
+            letter-spacing: 0.1vw;
+            padding: 0 9.11vw;
+            font: 400 1.33vw/1.93vw $font-regular;
+          }
+        }
+      }
+    }
+  }
+
+  .product-about {
+    padding-top: 1.04vw;
+    .product-about-noodle-row {
+      .about-noodle-item {
+        flex: 0 1 calc(25% - 0.78vw);
+        max-width: calc(25% - 0.78vw);
+
+        &:not(.show) {
+          .item-content {
+            height: 17.71vw;
+            padding-bottom: 3.65vw;
+            .item-content-wrapper {
+              padding-left: 1.56vw;
+              padding-right: 1.56vw;
+            }
+            .btn-fill {
+              width: 16.15vw;
+              font: 400 0.78vw/0.83vw $font-lemon;
+              letter-spacing: 0.21vw;
+              padding: 0.78vw;
+            }
+            h2 {
+              font: 400 1.56vw/1.72vw $font-lemon;
+              margin-bottom: 0.78vw;
+              letter-spacing: 0.31vw;
+              &.no1 {
+                &:before {
+                  width: 4.43vw;
+                  height: 4.17vw;
+                  left: -0.89vw;
+                  top: -2.71vw;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .product-carousel {
+    height: 39.58vw;
+
+    .owl-nav {
+      .owl-prev {
+        left: 4.43vw;
+        top: calc(50% - 2.6vw);
+        img {
+          width: 5.21vw;
+        }
+      }
+      .owl-next {
+        right: 4.43vw;
+        top: calc(50% - 2.6vw);
+        img {
+          width: 5.21vw;
+        }
+      }
     }
   }
 }

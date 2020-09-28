@@ -15,7 +15,7 @@
   <body class="home">
     <header class="autoplayed">
       <div class="container-fluid">
-        <a href="#">
+        <a href="./">
           <img
             class="logo"
             src="assets/img/kinjabang_logo_main.svg"
@@ -23,6 +23,8 @@
           />
         </a>
         <div class="main-menu">
+          <button id="toggleMenu" type="button"></button>
+
           <ul>
             <li>
               <a href="./">Home</a>
@@ -85,9 +87,15 @@
         </div>
         <h2 class="product-h2 facts yz-animation fadeIn">NUTRITIONAL FACTS</h2>
         <img
-          class="yz-animation fadeIn"
+          class="yz-animation fadeIn hidden-xs"
           id="nfp"
           src="assets/img/kinjabang_NFP.svg"
+          alt=""
+        />
+        <img
+          class="yz-animation fadeIn visible-xs"
+          id="nfp"
+          src="assets/img/kinjabang_NFP_xs.png"
           alt=""
         />
       </div>

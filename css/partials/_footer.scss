@@ -5,6 +5,9 @@ footer {
   border-top: 20px solid #000;
   position: relative;
   overflow: hidden;
+  @include down-sm {
+    border-top: 2.08vw solid #000;
+  }
   > div {
     transform: translate(0, 100%);
     transition: all 0.3s;
@@ -16,10 +19,15 @@ footer {
   }
   .footer-logo {
     display: inline-block;
+    @include down-sm {
+      display: block;
+    }
     img {
       margin-top: 35px;
-
       width: 1090px;
+      @include down-sm {
+        width: 80%;
+      }
     }
   }
   .footer-social {
@@ -34,8 +42,14 @@ footer {
       a {
         padding: 0 6px;
         display: block;
+        @include down-sm {
+          padding: 0 1.56vw;
+        }
         img {
           width: 58px;
+          @include down-sm {
+            width: 14.58vw;
+          }
         }
       }
     }
@@ -45,5 +59,42 @@ footer {
     text-transform: uppercase;
     letter-spacing: 0.5px;
     padding-bottom: 10px;
+    @include down-sm {
+      padding-left: 6.25vw;
+      padding-right: 6.25vw;
+      font: 400 2.92vw/4.58vw $font-lemon;
+    }
+  }
+}
+
+@include desk {
+  footer {
+    border-top: 1.04vw solid #000;
+
+    .footer-logo {
+      img {
+        margin-top: 1.82vw;
+
+        width: 56.77vw;
+      }
+    }
+    .footer-social {
+      margin-top: 1.82vw;
+      margin-bottom: 1.82vw;
+
+      li {
+        a {
+          padding: 0 0.31vw;
+          img {
+            width: 3.02vw;
+          }
+        }
+      }
+    }
+    .footer-copyright {
+      font: 400 0.65vw/1.04vw $font-lemon;
+      letter-spacing: 0.03vw;
+      padding-bottom: 0.52vw;
+    }
   }
 }

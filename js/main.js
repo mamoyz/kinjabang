@@ -10,11 +10,26 @@ $(function () {
   /* 1. GENERAL JS */
   var animationTriggerPoint = 60;
   if ($(window).innerWidth() / $(window).innerHeight() < 1.25) {
-    animationTriggerPoint = 50;
+    animationTriggerPoint = 40;
   }
 
+  $("header .main-menu ul li a").click(function () {
+    setTimeout(() => {
+      $("header").removeClass("menu-open");
+      $("html").removeClass("popup-visible");
+    }, 500);
+  });
+  $("#toggleMenu").click(function (e) {
+    e.preventDefault();
+    $("header").toggleClass("menu-open");
+    $("html").toggleClass("popup-visible");
+  });
   $(window).on("load", function () {
     $(".autoplayed").addClass("init");
+    // if ($(window).innerWidth() < 961) {
+    //   $(".yz-animation").addClass("init");
+    //   $("footer").addClass("init");
+    // }
   });
   $(window).on("scroll", function (e) {
     let wtop = $(this).scrollTop();
@@ -25,6 +40,7 @@ $(function () {
     }
 
     $.each($(".yz-animation"), function () {
+      // if ($(window).innerWidth() < 961) return false;
       if (
         $(window).scrollTop() +
           $(window).innerHeight() * animationTriggerPoint * 0.01 >
@@ -55,42 +71,36 @@ $(function () {
     let videoSrc = $(this).data("video");
     $(".video-popup").addClass("playing");
     setTimeout(() => {
-    $(".video-popup").addClass("visible");
-      
+      $(".video-popup").addClass("visible");
     }, 100);
     $(".video-popup .popup-content-inner").html(
       '<video controls autoplay><source src="' +
         videoSrc +
         '" type="video/mp4"></video>'
     );
-    $(this).closest('.about-item-desc').addClass('active');
+    $(this).closest(".about-item-desc").addClass("active");
   });
-  $(document).on("click", ".video-popup .popup-content-inner video", function (e) {
+  $(document).on("click", ".video-popup .popup-content-inner video", function (
+    e
+  ) {
     e.stopPropagation();
     $("html").removeClass("popup-visible");
-    $('.about-item-desc').removeClass('active');
-
-
+    $(".about-item-desc").removeClass("active");
   });
   $(document).on("click", ".video-popup .popup-content-inner", function (e) {
     e.preventDefault();
     $(".video-popup").removeClass("playing").removeClass("visible");
     $(".video-popup .popup-content-inner").html("");
     $("html").removeClass("popup-visible");
-    $('.about-item-desc').removeClass('active');
-
-
+    $(".about-item-desc").removeClass("active");
   });
   $(document).on("click", "#close-video", function (e) {
     e.preventDefault();
     $(".video-popup").removeClass("playing").removeClass("visible");
     $(".video-popup .popup-content-inner").html("");
     $("html").removeClass("popup-visible");
-    $('.about-item-desc').removeClass('active');
-
-
+    $(".about-item-desc").removeClass("active");
   });
-
 
   /* 3. ABOUT US PAGE JS */
   // let tempPos = 0;
@@ -101,7 +111,7 @@ $(function () {
     let item = $(this).closest(".home-about-item");
     let itemIndex = $(item).index() % 2;
     let text = $(this).next(".item-content-text").html();
-    $(this).closest('.about-item-desc').addClass('active');
+    $(this).closest(".about-item-desc").addClass("active");
 
     if (itemIndex) {
       $(".about-popup").css({ "justify-content": "flex-end" });
@@ -150,7 +160,7 @@ $(function () {
 
   $("#close-popup").click(function (e) {
     e.preventDefault();
-    $('.about-item-desc').removeClass('active');
+    $(".about-item-desc").removeClass("active");
 
     $(".about-popup .popup-content .popup-content-inner").html("");
     $(".about-popup").removeClass("visible");

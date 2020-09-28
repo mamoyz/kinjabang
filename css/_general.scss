@@ -1,6 +1,7 @@
 @import "variables";
 @import "partials/header";
 @import "partials/footer";
+
 * {
   box-sizing: border-box;
 }
@@ -15,7 +16,8 @@ body {
   margin: 15px;
   overflow-x: hidden;
   @include down-sm {
-    padding: 0;
+    border: 1.56vw solid #000;
+    margin: 1.56vw;
   }
   &.menu-in {
     overflow: hidden;
@@ -103,7 +105,7 @@ h6 {
   z-index: 200;
   background: transparent;
   display: none;
- 
+
   button {
     position: fixed;
     top: 50px;
@@ -120,17 +122,26 @@ h6 {
       width: 100%;
       height: 100%;
     }
+    @include down-sm {
+      width: 8.33vw;
+      right: 5.73vw;
+      top: 10.42vw;
+      height: 6.88vw;
+    }
   }
-  .popup-logo{
+  .popup-logo {
     width: 10%;
     left: 30px;
     position: fixed;
     bottom: 30px;
     opacity: 0;
-    transform: translate(0,200%);
+    transform: translate(0, 200%);
     transition: 1s all 2s;
+    @include down-sm {
+      width: 35%;
+    }
   }
-  .popup-icons{
+  .popup-icons {
     width: 10%;
     right: 30px;
     position: fixed;
@@ -142,12 +153,15 @@ h6 {
     padding: 0;
     margin: 0;
     opacity: 0;
-    transform: translate(0,200%);
+    transform: translate(0, 200%);
     transition: 1s all 2s;
-    li{
-      flex:0 1 calc(33.33% - 10px);
+    @include down-sm {
+      width: 35%;
     }
-    img{
+    li {
+      flex: 0 1 calc(33.33% - 10px);
+    }
+    img {
       width: 100%;
       height: auto;
     }
@@ -164,21 +178,84 @@ h6 {
     align-items: center;
     justify-content: center;
     padding: 150px 15%;
-
+    @include down-sm {
+      padding: 30px;
+    }
     video {
       width: 100%;
       outline: 0;
       opacity: 0;
-    transition: all 2s;
-      transform: translate(0,-50px) scale(2);
+      transition: all 2s;
+      transform: translate(0, -50px) scale(2);
     }
   }
-  &.visible{
+  &.visible {
     .popup-content-inner video,
     .popup-logo,
-    .popup-icons{
+    .popup-icons {
       opacity: 1;
-      transform: translate(0,0) scale(1);
+      transform: translate(0, 0) scale(1);
     }
+  }
+}
+
+@include desk {
+  body {
+    border: 0.78vw solid #000;
+    margin: 0.78vw;
+  }
+
+  .container {
+    padding: 0 1.04vw;
+  }
+
+  .container-fluid {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .video-popup {
+    button {
+      top: 2.6vw;
+      width: 2.6vw;
+      height: 2.6vw;
+      right: 2.6vw;
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .popup-logo {
+      left: 1.56vw;
+      bottom: 1.56vw;
+    }
+    .popup-icons {
+      right: 1.56vw;
+      bottom: 1.56vw;
+
+      li {
+        flex: 0 1 calc(33.33% - 0.52vw);
+      }
+    }
+
+    .popup-content-inner {
+      padding: 7.81vw 15%;
+      video {
+        transform: translate(0, -2.6vw) scale(2);
+      }
+    }
+  }
+}
+
+.visible-xs {
+  display: none;
+  @include down-sm {
+    display: block;
+  }
+}
+.hidden-xs {
+  display: block;
+  @include down-sm {
+    display: none;
   }
 }

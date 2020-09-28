@@ -14,11 +14,49 @@ header {
     justify-content: space-between;
     align-items: flex-start;
   }
-  &.sticky {
-    background: rgba(0, 0, 0, 0.8);
-    top: 0;
+  @include down-sm {
+    left: 1.56vw;
+    right: 1.56vw;
+    top: 1.56vw;
+    padding: 1.56vw;
+  }
+  &.menu-open {
+    background: #000;
     .logo {
-      width: 160px;
+      display: none;
+    }
+    .main-menu {
+      @include down-sm {
+        button {
+          background: url("../assets/img/menu-close.svg") no-repeat;
+          background-position: center !important;
+          background-size: contain !important;
+        }
+        ul {
+          height: 100vh;
+          li {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      }
+    }
+  }
+  &.sticky {
+    top: 0;
+    @include up-sm {
+      background: rgba(0, 0, 0, 0.8);
+    }
+    @include down-sm {
+      background: #000;
+    }
+    .logo {
+      @include fourk {
+        width: 160px;
+      }
+      @include desk {
+        width: 8.33vw;
+      }
     }
   }
   .logo {
@@ -28,18 +66,67 @@ header {
     width: 433px;
     margin-top: -5px;
     margin-left: 6px;
+    @include down-sm {
+      width: 34.58vw;
+      margin-top: 0.52vw;
+      margin-left: 16px;
+    }
   }
+
   .main-menu {
     color: #fff;
+    button {
+      display: none;
+      @include down-sm {
+        width: 8.33vw;
+        position: absolute;
+        right: 5.73vw;
+        top: 10.42vw;
+        height: 6.88vw;
+        display: block;
+        background: url("../assets/img/menu.svg") no-repeat;
+        border: 0;
+        outline: 0;
+        -webkit-appearance: none;
+        background-position: center !important;
+        background-size: contain !important;
+        cursor: pointer;
+        z-index: 500;
+      }
+    }
     ul {
       list-style: none;
       display: flex;
       flex-direction: row;
       padding: 10px 0 0 0;
-      transform: translateY(-200%);
-      opacity: 0;
-      transition: 1s all 1s;
+      @include up-sm {
+        opacity: 0;
+        transform: translateY(-200%);
+        transition: 1s all 1s;
+      }
+      @include down-sm {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background: #000;
+        text-align: center;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.5s;
+        justify-content: center;
+      }
       li {
+        @include down-sm {
+          opacity: 0;
+          transform: translateY(5.21vw);
+          transition: 0.5s all 0.5s;
+          margin: 3.65vw 0;
+        }
         &.shop-now {
           a {
             padding: 25px 53px 20px;
@@ -48,6 +135,9 @@ header {
             background-size: cover;
             background-position: 0 0;
             // animation:3000s shopbutton infinite linear;
+            @include down-sm {
+              padding: 2.6vw 5.52vw 2.08vw;
+            }
             &:hover {
               border-color: transparent;
               // background: #df6048;
@@ -72,7 +162,9 @@ header {
           padding: 12px 32px;
           transition: all 0.2s ease-in-out;
           border-bottom: 2px solid transparent;
-
+          @include down-sm {
+            font: 400 4.58vw/6.25vw $font-lemon;
+          }
           &:hover {
             border-color: #df6048;
           }
@@ -97,8 +189,10 @@ header {
     }
     .main-menu {
       ul {
-        transform: translateY(0);
-        opacity: 1;
+        @include up-sm {
+          transform: translateY(0);
+          opacity: 1;
+        }
       }
     }
   }
@@ -113,5 +207,47 @@ header {
   }
   100% {
     background-position: 0 0;
+  }
+}
+
+@include desk {
+  header {
+    left: 0.78vw;
+    right: 0.78vw;
+    top: 0.78vw;
+    padding: 0.78vw;
+
+    &.sticky {
+      .logo {
+        width: 8.33vw;
+      }
+    }
+    .logo {
+      width: 22.55vw;
+      margin-top: -0.26vw;
+      margin-left: 0.31vw;
+    }
+    .main-menu {
+      ul {
+        padding: 0.52vw 0 0 0;
+        li {
+          &.shop-now {
+            a {
+              padding: 1.3vw 2.76vw 1.04vw;
+            }
+          }
+          &.current-menu-item {
+            a {
+            }
+          }
+          a {
+            font: 400 0.94vw/2.08vw $font-lemon;
+            letter-spacing: 0.13vw;
+            padding: 0.63vw 1.67vw;
+            border-bottom: 0.1vw solid transparent;
+          }
+        }
+      }
+    }
   }
 }

@@ -11,6 +11,10 @@ body {
   border-bottom: 35px solid #000;
   position: relative;
   overflow: hidden;
+  @include down-sm {
+    border-bottom: 1.65vw solid #000;
+    padding: 39.06vw 0 36.46vw;
+  }
   &:before {
     content: " ";
     background: url("../assets/img/bg-pattern-1.png");
@@ -24,6 +28,9 @@ body {
     transition: 2s all 0.5s cubic-bezier(0.15, 1.01, 1, 1);
     opacity: 0;
     background-size: 672px 269px;
+    @include down-sm {
+      background-size: 70vw 28.02vw;
+    }
   }
   &:after {
     content: " ";
@@ -38,6 +45,9 @@ body {
     transition: 2s all 0.5s cubic-bezier(0.15, 1.01, 1, 1);
     opacity: 0;
     background-size: 672px 269px;
+    @include down-sm {
+      background-size: 70vw 28.02vw;
+    }
   }
   .hero-content {
     position: relative;
@@ -51,6 +61,9 @@ body {
       opacity: 0;
       transform: scale(3);
       transition: all 1.5s cubic-bezier(0.15, 1.01, 1, 1);
+      @include down-sm {
+        width: 79.69vw;
+      }
     }
   }
   &.init {
@@ -102,6 +115,13 @@ body {
     // width: 9999999999vw;
     position: relative;
     animation: 15s marquee infinite linear;
+    @include down-sm {
+      font: 400 7.92vw/17.19vw $font-lemon;
+      letter-spacing: 1.15vw;
+    }
+  }
+  @include down-sm {
+    padding: 9.9vw 0;
   }
 }
 .home-product {
@@ -180,6 +200,37 @@ body {
       }
     }
   }
+  @include down-sm {
+    border-top: 0.78vw solid #000;
+
+    .container-fluid {
+      &:before {
+        width: 20.57vw;
+      }
+      .product-title {
+        flex: 0 1 20.57vw;
+        h2 {
+          font: 400 7.29vw/15.63vw $font-lemon;
+          left: 9.38vw;
+          top: 0.47vw;
+          letter-spacing: 0.89vw;
+        }
+      }
+      .product-img {
+        img.dry-noodles {
+          top: -6.46vw;
+          left: 1.77vw;
+          width: 56.77vw;
+          margin-bottom: -6.46vw;
+        }
+        .logo-vert {
+          right: -1.72vw;
+          top: -2.03vw;
+          width: 19.84vw;
+        }
+      }
+    }
+  }
 }
 .home-sec-title {
   text-align: center;
@@ -187,6 +238,7 @@ body {
   background: #000;
   position: relative;
   overflow: hidden;
+
   h1 {
     color: #000;
     position: relative;
@@ -223,12 +275,23 @@ body {
       color: #fff;
     }
   }
+  @include down-sm {
+    padding: 20vw 0;
+    h2 {
+      font: 400 8vw/15vw $font-lemon;
+      letter-spacing: 1.77vw;
+    }
+  }
 }
 .home-about {
   background: #000;
   .home-sec-title {
     border-top: 15px solid #000;
     padding-top: 45px;
+    @include down-sm {
+      border-top: 1.56vw solid #000;
+      padding: 20vw 0;
+    }
   }
   .home-about-list {
     .home-about-item {
@@ -236,6 +299,9 @@ body {
       border-bottom: 15px solid #000;
       overflow: hidden;
       position: relative;
+      @include down-sm {
+        border-bottom: 10px solid #000;
+      }
       &.init {
         .about-item-img {
           transform: translate(0, 0);
@@ -244,6 +310,9 @@ body {
       &:nth-child(odd) {
         .container-fluid {
           flex-direction: row;
+          @include down-sm {
+            flex-direction: column-reverse;
+          }
         }
         .about-item-desc {
           border-right: 15px solid #000;
@@ -259,6 +328,9 @@ body {
       &:nth-child(even) {
         .container-fluid {
           flex-direction: row-reverse;
+          @include down-sm {
+            flex-direction: column-reverse;
+          }
         }
         .about-item-desc {
           border-left: 15px solid #000;
@@ -286,7 +358,10 @@ body {
         transition: all 0.3s;
         background: #fff;
         position: relative;
-
+        @include down-sm {
+          padding-left: 0;
+          border: none !important;
+        }
         video {
           position: absolute;
           top: 0;
@@ -302,19 +377,30 @@ body {
           }
         }
         &:hover {
-          video {
-            opacity: 1;
+          @include up-sm {
+            video {
+              opacity: 1;
+            }
           }
         }
 
         .desc-inner {
           width: 800px;
+          @include down-sm {
+            width: 100%;
+            text-align: center;
+            padding: 13.54vw 7vw;
+          }
           h3 {
             font: 400 66px/70px $font-lemon;
             color: #000;
             letter-spacing: 8.5px;
             text-transform: uppercase;
             position: relative;
+            @include down-sm {
+              font: 400 6.88vw/7.29vw $font-lemon;
+              letter-spacing: 0.89vw;
+            }
             span {
               position: relative;
               z-index: 2;
@@ -332,6 +418,14 @@ body {
                 position: absolute;
                 left: -144px;
                 top: -86px;
+                @include down-sm {
+                  width: 21.25vw;
+                  height: 20.1vw;
+                  left: 0;
+                  right: 0;
+                  margin: auto;
+                  top: -90%;
+                }
               }
             }
           }
@@ -344,6 +438,12 @@ body {
             display: inline-block;
             margin-top: 40px;
             border: 4px solid #000;
+            @include down-sm {
+              width: 100%;
+              padding: 1.98vw 8.85vw;
+              font: 400 3.65vw/8.54vw $font-lemon;
+              max-width: 70.83vw;
+            }
           }
         }
       }
@@ -352,6 +452,9 @@ body {
         transform: translate(0, -100%);
         flex: 0 1 524px;
         position: relative;
+        @include down-sm {
+          flex: auto;
+        }
         img {
           display: block;
           width: 100%;
@@ -377,6 +480,9 @@ body {
 
   .instagram-gallery {
     flex-wrap: wrap;
+    @include down-sm {
+      display: none;
+    }
     @include fourk {
       max-width: 1843px;
       margin: auto;
@@ -447,9 +553,37 @@ body {
           flex: 0 1 40.8%;
           border-left: 20px solid #000;
           border-right: 20px solid #000;
+          @include down-sm {
+            display: none;
+          }
         }
         .col3 {
           flex: 0 1 22.5%;
+          @include down-sm {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .instagram-gallery-xs {
+    display: none;
+    @include down-sm {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      div {
+        flex: 0 1 calc(50% - 1.04vw);
+        position: relative;
+        padding-top: 50%;
+        overflow: hidden;
+        margin-top: 2.08vw;
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
         }
       }
     }
@@ -469,14 +603,29 @@ body {
   align-items: center;
   justify-content: flex-start;
   display: none;
+  @include down-sm {
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
   &.right-to-left {
     button {
       right: 60px;
+      @include down-sm {
+        right: 4.17vw;
+        top: 10.42vw;
+        left: auto;
+      }
     }
   }
   &.left-to-right {
     button {
       left: 1240px;
+      @include down-sm {
+        right: 4.17vw;
+        top: 10.42vw;
+        left: auto;
+      }
     }
   }
   button {
@@ -491,6 +640,11 @@ body {
     z-index: 600;
     outline: 0;
     display: none;
+    @include down-sm {
+      width: 10vw;
+      height: 10vw;
+    }
+
     &:hover {
       svg {
         path {
@@ -524,7 +678,13 @@ body {
     overflow-y: scroll;
     position: relative;
     transform: translate(-105vw, 0);
-
+    @include down-sm {
+      width: 100%;
+      height: 100vh;
+      padding: 25vw 10vw 13.54vw 10vw;
+      font: 400 4vw/6vw $font-lemon;
+      letter-spacing: 0.2vw;
+    }
     &::-webkit-scrollbar {
       width: 5px;
     }
@@ -551,4 +711,211 @@ body.popup-visible {
 }
 html.popup-visible {
   overflow: hidden;
+}
+
+@include desk {
+  .hero {
+    padding: 7.29vw 0 4.17vw;
+    border-bottom: 1.82vw solid #000;
+    &:before {
+      background-size: 35vw 14.01vw;
+    }
+    &:after {
+      background-size: 35vw 14.01vw;
+    }
+
+    .hero-main-product {
+      img {
+        width: 45.94vw;
+      }
+    }
+  }
+
+  .marquee {
+    padding: 4.95vw 0;
+
+    h2 {
+      font: 400 3.96vw/8.59vw $font-lemon;
+      letter-spacing: 0.57vw;
+    }
+  }
+  .home-product {
+    border-top: 0.78vw solid #000;
+
+    .container-fluid {
+      &:before {
+        width: 20.57vw;
+      }
+      .product-title {
+        flex: 0 1 20.57vw;
+        h2 {
+          font: 400 7.29vw/15.63vw $font-lemon;
+          left: 9.38vw;
+          top: 0.47vw;
+          letter-spacing: 0.89vw;
+        }
+      }
+      .product-img {
+        img.dry-noodles {
+          top: -6.46vw;
+          left: 1.77vw;
+          width: 56.77vw;
+          margin-bottom: -6.46vw;
+        }
+        .logo-vert {
+          right: -1.72vw;
+          top: -2.03vw;
+          width: 19.84vw;
+        }
+      }
+    }
+  }
+  .home-sec-title {
+    padding: 3.13vw 0 2.08vw;
+
+    h2 {
+      font: 400 7.29vw/15.63vw $font-lemon;
+      letter-spacing: 0.89vw;
+    }
+  }
+  .home-about {
+    .home-sec-title {
+      border-top: 0.78vw solid #000;
+      padding-top: 2.34vw;
+    }
+    .home-about-list {
+      .home-about-item {
+        border-bottom: 0.78vw solid #000;
+        &.init {
+          .about-item-img {
+          }
+        }
+        &:nth-child(odd) {
+          .container-fluid {
+          }
+          .about-item-desc {
+            border-right: 0.78vw solid #000;
+          }
+
+          &.init {
+            .about-item-desc {
+            }
+          }
+        }
+        &:nth-child(even) {
+          .container-fluid {
+          }
+          .about-item-desc {
+            border-left: 0.78vw solid #000;
+          }
+          &.init {
+            .about-item-desc {
+            }
+          }
+        }
+        .container-fluid {
+        }
+
+        .about-item-desc {
+          padding-left: 17.03vw;
+
+          .desc-inner {
+            width: 41.67vw;
+            h3 {
+              font: 400 3.44vw/3.65vw $font-lemon;
+              letter-spacing: 0.44vw;
+              span {
+              }
+              &.no1 {
+                margin-top: 4.69vw;
+                &:before {
+                  width: 10.63vw;
+                  height: 10.05vw;
+                  left: -7.5vw;
+                  top: -4.48vw;
+                }
+              }
+            }
+            a {
+              font: 400 0.78vw/0.83vw $font-lemon;
+              padding: 0.99vw 4.43vw;
+              letter-spacing: 0.1vw;
+              margin-top: 2.08vw;
+              border: 0.21vw solid #000;
+            }
+          }
+        }
+        .about-item-img {
+          flex: 0 1 27.29vw;
+          img {
+          }
+        }
+      }
+    }
+  }
+
+  .instagram {
+    .instagram-gallery {
+      > .col1 {
+        border-right: 1.04vw solid #000;
+      }
+      > .col2 {
+        .row1 {
+          border-bottom: 1.04vw solid #000;
+          .col1 {
+          }
+          .col2 {
+            border-left: 1.04vw solid #000;
+          }
+        }
+        .row2 {
+          .col1 {
+          }
+          .col2 {
+            border-left: 1.04vw solid #000;
+            border-right: 1.04vw solid #000;
+          }
+          .col3 {
+          }
+        }
+      }
+    }
+  }
+
+  .about-popup {
+    left: 0.78vw;
+    right: 0.78vw;
+    width: calc(100% - 1.56vw);
+    &.right-to-left {
+      button {
+        right: 3.13vw;
+      }
+    }
+    &.left-to-right {
+      button {
+        left: 64.58vw;
+      }
+    }
+    button {
+      width: 2.6vw;
+      height: 2.6vw;
+    }
+
+    .popup-content {
+      width: 69.64vw;
+      padding: 5.21vw 8.33vw 6.77vw 7.29vw;
+      font: 400 1.25vw/2.86vw $font-lemon;
+      letter-spacing: 0.21vw;
+
+      &::-webkit-scrollbar {
+        width: 0.26vw;
+      }
+      &::-webkit-scrollbar-track {
+      }
+      &::-webkit-scrollbar-thumb {
+        border-radius: 0.31vw;
+        border: 0.16vw solid #df6048;
+      }
+    }
+  }
 }

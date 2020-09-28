@@ -1,5 +1,9 @@
 .contact-hero {
   height: 470px;
+  @include down-sm {
+    height: 40vw;
+    padding: 0;
+  }
 }
 .contact-product {
   overflow: hidden;
@@ -14,15 +18,39 @@
       margin-top: 105px;
       margin-bottom: 53px;
       opacity: 0;
-      transform: scale(0.5) translate(0,50px);
+      transform: scale(0.5) translate(0, 50px);
       transition: all 1s;
     }
   }
-  .container-fluid{
-    &.init{
-      .contact-main-product{
+  .container-fluid {
+    &.init {
+      .contact-main-product {
         opacity: 1;
-        transform: scale(1) translate(0,0);
+        transform: scale(1) translate(0, 0);
+      }
+    }
+  }
+  @include down-sm {
+    .container-fluid {
+      &:before {
+        width: 23vw !important;
+      }
+    }
+    border-bottom: 1.56vw solid #000;
+    .product-title {
+      flex: 0 1 23vw !important;
+      h2 {
+        top: 6.5vw !important;
+        left: 10.5vw !important;
+      }
+    }
+    .product-img {
+      border-left: 1.56vw solid #000;
+      .contact-main-product {
+        width: 63vw;
+        margin-top: 10vw;
+        margin-bottom: 7vw;
+        transform: scale(0.5) translate(0, 2.6vw);
       }
     }
   }
@@ -32,6 +60,10 @@
   border-top: 15px solid #000;
   position: relative;
   padding: 170px 215px 90px;
+  @include down-sm {
+    border-top: 1.56vw solid #000;
+    padding: 13vw 7vw;
+  }
   .form-group {
     margin-bottom: 61px;
     > label {
@@ -65,6 +97,78 @@
     }
     textarea {
       height: 230px;
+    }
+
+    @include down-sm {
+      margin-bottom: 7.94vw;
+      > label {
+        font: 400 3.65vw/3.91vw $font-lemon;
+        margin-bottom: 3.26vw;
+        span {
+        }
+      }
+      .kinjabang-input {
+        border: 0.78vw solid #000;
+        border-radius: 1.04vw;
+        padding: 4.43vw 3.26vw 2.99vw 3.26vw;
+        font: 400 3.65vw/3.65vw $font-lemon;
+      }
+      input[type="submit"] {
+        border: 0.78vw solid #000;
+        border-radius: 1.04vw;
+        padding: 4.43vw 3.26vw 2.99vw 3.26vw;
+        font: 400 3.65vw/3.65vw $font-lemon;
+      }
+      textarea {
+        height: 29.95vw;
+      }
+    }
+  }
+}
+
+@include desk {
+  .contact-hero {
+    height: 24.48vw;
+  }
+  .contact-product {
+    border-bottom: 0.78vw solid #000;
+    .product-img {
+      border-left: 0.78vw solid #000;
+      .contact-main-product {
+        width: 59.9vw;
+        margin-top: 5.47vw;
+        margin-bottom: 2.76vw;
+        transform: scale(0.5) translate(0, 2.6vw);
+      }
+    }
+  }
+
+  .contact-form {
+    border-top: 0.78vw solid #000;
+    padding: 8.85vw 11.2vw 4.69vw;
+    .form-group {
+      margin-bottom: 3.18vw;
+      > label {
+        font: 400 1.46vw/1.56vw $font-lemon;
+        margin-bottom: 1.3vw;
+        span {
+        }
+      }
+      .kinjabang-input {
+        border: 0.31vw solid #000;
+        border-radius: 0.42vw;
+        padding: 1.77vw 1.3vw 1.2vw 1.3vw;
+        font: 400 1.46vw/1.46vw $font-lemon;
+      }
+      input[type="submit"] {
+        border: 0.31vw solid #000;
+        border-radius: 0.42vw;
+        padding: 1.77vw 1.3vw 1.2vw 1.3vw;
+        font: 400 1.46vw/1.46vw $font-lemon;
+      }
+      textarea {
+        height: 11.98vw;
+      }
     }
   }
 }
