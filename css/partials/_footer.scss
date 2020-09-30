@@ -5,6 +5,7 @@ footer {
   border-top: 20px solid #000;
   position: relative;
   overflow: hidden;
+  background: #fff;
   @include down-sm {
     border-top: 2.08vw solid #000;
   }

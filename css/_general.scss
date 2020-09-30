@@ -12,13 +12,20 @@ html {
 
 body {
   padding: 0;
-  border: 15px solid #000;
-  margin: 15px;
+  margin: 0;
+  background: #000;
   overflow-x: hidden;
-  @include down-sm {
-    border: 1.56vw solid #000;
-    margin: 1.56vw;
+  #app {
+    padding: 15px;
+    background: #000;
+    border: 15px solid #fff;
+    @include down-sm {
+      border: 1.56vw solid #fff;
+      margin: 1.56vw;
+      padding: 1.56vw;
+    }
   }
+
   &.menu-in {
     overflow: hidden;
     height: 100vh;
@@ -201,8 +208,10 @@ h6 {
 
 @include desk {
   body {
-    border: 0.78vw solid #000;
-    margin: 0.78vw;
+    #app {
+      padding: 0.78vw;
+      border: 0.78vw solid #fff;
+    }
   }
 
   .container {

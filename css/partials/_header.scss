@@ -34,6 +34,12 @@ header {
         }
         ul {
           height: 100vh;
+          padding: 0 0 15vh 0;
+
+          &:after {
+            display: block;
+            opacity: 1;
+          }
           li {
             opacity: 1;
             transform: translateY(0);
@@ -114,18 +120,32 @@ header {
         text-align: center;
         flex-direction: column;
         margin: 0;
-        padding: 0;
+        padding: 0 0 0 0;
         height: 0;
         overflow: hidden;
         transition: height 0.5s;
         justify-content: center;
+        &:after {
+          content: " ";
+          background: url("../assets/img/logo_image.svg") no-repeat;
+          margin: auto;
+          width: 10vh;
+          height: 16vh;
+          background-size: cover;
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 5vh;
+          opacity: 0;
+          display: none;
+        }
       }
       li {
         @include down-sm {
           opacity: 0;
           transform: translateY(5.21vw);
           transition: 0.5s all 0.5s;
-          margin: 3.65vw 0;
+          margin: 3.5vh 0;
         }
         &.shop-now {
           a {

@@ -95,7 +95,7 @@ body {
     left: 0;
   }
   100% {
-    left: -100%;
+    left: -100000%;
   }
 }
 .marquee {
@@ -114,7 +114,7 @@ body {
     left: 0;
     // width: 9999999999vw;
     position: relative;
-    animation: 15s marquee infinite linear;
+    animation: 15000s marquee infinite linear;
     @include down-sm {
       font: 400 7.92vw/17.19vw $font-lemon;
       letter-spacing: 1.15vw;

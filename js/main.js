@@ -26,10 +26,11 @@ $(function () {
   });
   $(window).on("load", function () {
     $(".autoplayed").addClass("init");
-    // if ($(window).innerWidth() < 961) {
-    //   $(".yz-animation").addClass("init");
-    //   $("footer").addClass("init");
-    // }
+    if ($(window).innerWidth() < 961) {
+      setTimeout(() => {
+        $(".autoplayed-xs").addClass("init");
+      }, 1000);
+    }
   });
   $(window).on("scroll", function (e) {
     let wtop = $(this).scrollTop();

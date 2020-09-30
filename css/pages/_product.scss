@@ -13,6 +13,7 @@
   right: 0;
   margin: auto;
   text-align: center;
+  z-index: 15;
   @include down-sm {
     top: 18vw;
   }
@@ -96,6 +97,7 @@
   padding-bottom: 134px;
   position: relative;
   z-index: 10;
+  background: #fff;
   @include down-sm {
     padding-top: 28vw;
     padding-bottom: 9vw;
@@ -153,8 +155,11 @@
     display: flex;
     justify-content: space-between;
     @include down-sm {
-      width: 75vw;
+      width: 100%;
       margin: 5vw auto 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
     img {
       width: 31%;
@@ -168,6 +173,22 @@
       }
       &:nth-child(3) {
         transform: translate(-100px, 0);
+      }
+      @include down-sm {
+        width: 60%;
+        margin-bottom: 4vw;
+        &:nth-child(1) {
+          transform: translate(0, 20%);
+          transition: 0.5s all 0s;
+        }
+        &:nth-child(2) {
+          transform: translate(0, 20%);
+          transition: 0.5s all 0.3s;
+        }
+        &:nth-child(3) {
+          transform: translate(0, 20%);
+          transition: 0.5s all 0.6s;
+        }
       }
     }
     &.init {
@@ -190,6 +211,7 @@
     }
   }
   #nfp {
+    margin: auto;
     width: 1030px;
     @include down-sm {
       width: 90%;
@@ -241,21 +263,27 @@
 }
 .instructions-heading {
   border-top: 15px solid #000;
-  padding: 60px 0 20px;
+  padding: 150px 0;
   @include down-sm {
     border-top: 0;
+    padding: 10vw 0;
   }
   h2 {
-    font: 400 170px/370px $font-lemon;
+    font: 400 76px/165px $font-lemon;
+    letter-spacing: 11px;
     text-transform: uppercase;
     white-space: nowrap;
-    color: #fff;
+    color: #000;
     left: 0;
     position: relative;
-    animation: 15s marquee infinite linear;
+    animation: 15000s marquee infinite linear;
     @include down-sm {
-      font: 400 8vw/18vw $font-lemon;
       padding: 10vw 0;
+      font: 400 7.92vw/17.19vw $font-lemon;
+      letter-spacing: 1.15vw;
+    }
+    &.init {
+      color: #fff;
     }
   }
 }
@@ -273,6 +301,7 @@
       align-items: stretch;
       justify-content: space-between;
       border-bottom: 15px solid #000;
+      background: #fff;
       @include down-sm {
         justify-content: center;
         align-items: center;
@@ -594,10 +623,10 @@
   }
   .instructions-heading {
     border-top: 0.78vw solid #000;
-
-    padding: 3.13vw 0 1.04vw;
+    padding: 7.81vw 0;
     h2 {
-      font: 400 8.85vw/19.27vw $font-lemon;
+      font: 400 3.96vw/8.59vw $font-lemon;
+      letter-spacing: 0.57vw;
     }
   }
   .instructions {
