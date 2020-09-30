@@ -1,6 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="285.44" height="285.44" viewBox="0 0 285.44 285.44">
-  <g id="kinjabang_FB" transform="translate(8.22 8.22)">
-    <circle id="Ellipse_7" data-name="Ellipse 7" cx="134.5" cy="134.5" r="134.5" transform="translate(0)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="16.44"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="303" height="303" viewBox="0 0 303 303">
+  <g id="kinjabang_FB" transform="translate(16 16)">
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="303" height="303" transform="translate(-16 -16)" fill="#fff"/>
+    <circle id="Ellipse_7" data-name="Ellipse 7" cx="134.5" cy="134.5" r="134.5" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="16.44"/>
     <path id="Path_33" data-name="Path 33" d="M649.424,460.187c-6.308,0-12.143-.431-17.913.086-12.638,1.12-22.047,5.361-21.293,23.6.172,4.069.022,8.138.022,12.746H599v18.947c3.875.323,7.406.6,11.368.947v54.364h22.607V515.326H648.3c.56-6.416,1.1-12.315,1.679-18.839H632.91c0-4.306-.108-8.009.022-11.691.108-2.777,1.443-4.349,4.543-4.22,3.918.172,7.859.043,11.971.043V460.187Z" transform="translate(-489.82 -380.762)"/>
   </g>
 </svg>

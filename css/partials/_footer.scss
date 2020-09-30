@@ -48,6 +48,7 @@ footer {
         }
         img {
           width: 58px;
+          display: block;
           @include down-sm {
             width: 14.58vw;
           }

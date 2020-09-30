@@ -198,27 +198,27 @@ h6 {
   }
 }
 
-#back-to-top {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  width: 80px;
-  height: 80px;
-  z-index: 5000;
-  display: none;
-  @include down-sm {
-    width: 15vw;
-    height: 15vw;
-    right: 4.5vw;
-    bottom: 4.5vw;
-  }
-  img {
-    width: 100%;
-  }
-  &:hover {
-    opacity: 1;
-  }
-}
+// #back-to-top {
+//   position: fixed;
+//   bottom: 30px;
+//   right: 30px;
+//   width: 80px;
+//   height: 80px;
+//   z-index: 5000;
+//   display: none;
+//   @include down-sm {
+//     width: 15vw;
+//     height: 15vw;
+//     right: 4.5vw;
+//     bottom: 4.5vw;
+//   }
+//   img {
+//     width: 100%;
+//   }
+//   &:hover {
+//     opacity: 1;
+//   }
+// }
 
 @include desk {
   body {

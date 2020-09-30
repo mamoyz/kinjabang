@@ -85,6 +85,31 @@
       text-transform: uppercase;
       -webkit-appearance: none;
     }
+    .kinjabang-select {
+      position: relative;
+      &:after {
+        content: " ";
+        background: url("../assets/img/select-arrow.svg") no-repeat;
+        position: absolute;
+        top: calc(50% - 10px);
+        right: 30px;
+        width: 30px;
+        height: 20px;
+        background-size: contain;
+        z-index: 0;
+        @include down-sm {
+          top: calc(50% - 1.04vw);
+          right: 3.13vw;
+          width: 3.13vw;
+          height: 2.08vw;
+        }
+      }
+      select {
+        position: relative;
+        z-index: 2;
+        background: transparent;
+      }
+    }
     input[type="submit"] {
       border: 6px solid #000;
       border-radius: 8px;
@@ -162,6 +187,15 @@
         padding: 1.77vw 1.3vw 1.2vw 1.3vw;
         font: 400 1.46vw/1.46vw $font-lemon;
       }
+      .kinjabang-select {
+        &:after {
+          top: calc(50% - 0.52vw);
+          right: 1.56vw;
+          width: 1.56vw;
+          height: 1.04vw;
+        }
+      }
+
       input[type="submit"] {
         border: 0.31vw solid #000;
         border-radius: 0.42vw;
