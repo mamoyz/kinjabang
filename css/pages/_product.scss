@@ -276,7 +276,7 @@
     color: #000;
     left: 0;
     position: relative;
-    animation: 15000s marquee infinite linear;
+    animation: 6000s marquee infinite linear;
     @include down-sm {
       padding: 10vw 0;
       font: 400 7.92vw/17.19vw $font-lemon;
@@ -381,6 +381,10 @@
             font: 400 4vw/6vw $font-regular;
             text-align: center;
             letter-spacing: 0.8vw;
+          }
+          p {
+            position: relative;
+            z-index: 5;
           }
           video {
             position: absolute;

@@ -1,12 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1434.8 1434.8" style="enable-background:new 0 0 1434.8 1434.8;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:none;stroke:#000000;stroke-width:16.44;stroke-miterlimit:10;}
-</style>
-<circle class="st0" cx="717.4" cy="717.4" r="625.5"/>
-<path d="M833.2,460.8c-29.3,0-56.4-2-83.2,0.4c-58.7,5.2-102.4,24.9-98.9,109.6c0.8,18.9,0.1,37.8,0.1,59.2h-52.2V718
-	c18,1.5,34.4,2.8,52.8,4.4v252.5h105v-258H828c2.6-29.8,5.1-57.2,7.8-87.5h-79.3c0-20-0.5-37.2,0.1-54.3
-	c0.5-12.9,6.7-20.2,21.1-19.6c18.2,0.8,36.5,0.2,55.6,0.2V460.8z"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="285.44" height="285.44" viewBox="0 0 285.44 285.44">
+  <g id="kinjabang_FB" transform="translate(8.22 8.22)">
+    <circle id="Ellipse_7" data-name="Ellipse 7" cx="134.5" cy="134.5" r="134.5" transform="translate(0)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="16.44"/>
+    <path id="Path_33" data-name="Path 33" d="M649.424,460.187c-6.308,0-12.143-.431-17.913.086-12.638,1.12-22.047,5.361-21.293,23.6.172,4.069.022,8.138.022,12.746H599v18.947c3.875.323,7.406.6,11.368.947v54.364h22.607V515.326H648.3c.56-6.416,1.1-12.315,1.679-18.839H632.91c0-4.306-.108-8.009.022-11.691.108-2.777,1.443-4.349,4.543-4.22,3.918.172,7.859.043,11.971.043V460.187Z" transform="translate(-489.82 -380.762)"/>
+  </g>
 </svg>

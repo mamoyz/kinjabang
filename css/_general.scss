@@ -20,9 +20,9 @@ body {
     background: #000;
     border: 15px solid #fff;
     @include down-sm {
-      border: 1.56vw solid #fff;
+      border: none;
       margin: 1.56vw;
-      padding: 1.56vw;
+      padding: 0;
     }
   }
 
@@ -206,6 +206,28 @@ h6 {
   }
 }
 
+#back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 80px;
+  height: 80px;
+  z-index: 5000;
+  display: none;
+  @include down-sm {
+    width: 15vw;
+    height: 15vw;
+    right: 4.5vw;
+    bottom: 4.5vw;
+  }
+  img {
+    width: 100%;
+  }
+  &:hover {
+    opacity: 1;
+  }
+}
+
 @include desk {
   body {
     #app {
@@ -253,6 +275,12 @@ h6 {
         transform: translate(0, -2.6vw) scale(2);
       }
     }
+  }
+  #back-to-top {
+    bottom: 1.56vw;
+    right: 1.56vw;
+    width: 4.17vw;
+    height: 4.17vw;
   }
 }
 

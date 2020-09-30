@@ -39,7 +39,28 @@ $(function () {
     } else {
       $("header").removeClass("sticky");
     }
-
+    if ($("#about").length) {
+      if (wtop + 100 > $("#about").offset().top) {
+        $("header .main-menu ul li.current-menu-item").removeClass(
+          "current-menu-item"
+        );
+        $('header .main-menu ul li a[href="./#about"')
+          .closest("li")
+          .addClass("current-menu-item");
+      } else {
+        $("header .main-menu ul li.current-menu-item").removeClass(
+          "current-menu-item"
+        );
+        $('header .main-menu ul li a[href="./"')
+          .closest("li")
+          .addClass("current-menu-item");
+      }
+    }
+    if (wtop > $(window).innerHeight()) {
+      $("#back-to-top").fadeIn();
+    } else {
+      $("#back-to-top").fadeOut();
+    }
     $.each($(".yz-animation"), function () {
       // if ($(window).innerWidth() < 961) return false;
       if (
@@ -63,6 +84,17 @@ $(function () {
         $("footer").removeClass("init");
       }
     });
+  });
+
+  $("#back-to-top").click(function (e) {
+    e.preventDefault();
+    $("html,body").animate(
+      {
+        scrollTop: 0,
+      },
+      1000,
+      "swing"
+    );
   });
 
   /* 2. HOMEPAGE JS */

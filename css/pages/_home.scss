@@ -487,6 +487,10 @@ body {
       max-width: 1843px;
       margin: auto;
     }
+    a {
+      display: block;
+      overflow: hidden;
+    }
     .td1 {
       flex: 0 1 100%;
       opacity: 0;
@@ -522,9 +526,14 @@ body {
         opacity: 1;
       }
     }
+
     img {
       width: 100%;
       display: block;
+      transition: all 0.5s;
+      &:hover {
+        transform: scale(1.2) rotate(4deg);
+      }
     }
     > .col1 {
       border-right: 20px solid #000;
