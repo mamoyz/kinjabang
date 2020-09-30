@@ -193,8 +193,8 @@
     }
     &.init {
       img {
-        opacity: 1;
-        transform: translate(0, 0);
+        opacity: 1 !important;
+        transform: translate(0, 0) !important;
       }
     }
   }
@@ -361,9 +361,11 @@
           img {
             display: block;
             width: 100%;
+            margin-top: -1px;
+            margin-bottom: -1px;
             @include down-sm {
               width: 40%;
-              margin: 20vw auto 5vw;
+              margin: 20vw auto 5vw !important;
             }
           }
         }
