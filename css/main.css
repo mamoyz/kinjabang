@@ -407,7 +407,7 @@ h1, h2, h3, h4, h5, h6 { margin: 0; }
 
 .instagram .instagram-gallery img { width: 100%; display: block; -webkit-transition: all 0.5s; transition: all 0.5s; }
 
-.instagram .instagram-gallery img:hover { -webkit-transform: scale(1.2) rotate(4deg); transform: scale(1.2) rotate(4deg); }
+.instagram .instagram-gallery img:hover { -webkit-transform: scale(1.2); transform: scale(1.2); }
 
 .instagram .instagram-gallery > .col1 { border-right: 20px solid #000; -webkit-box-flex: 0; -ms-flex: 0 1 47%; flex: 0 1 47%; }
 
@@ -592,7 +592,7 @@ html.popup-visible { overflow: hidden; }
 
 @media (max-width: 960px) { .product-info #nfp { width: 90%; margin: auto; } }
 
-.product-middle { position: relative; z-index: 5; background: #000; overflow: hidden; height: 760px; border-top: 15px solid #000; border-bottom: 15px solid #000; }
+.product-middle { position: relative; z-index: 5; background: #000; overflow: hidden; height: 760px; border-top: 15px solid #000; }
 
 @media (max-width: 960px) { .product-middle { height: 50vw; border-top: 1.04vw solid #000; border-bottom: 1.04vw solid #000; } }
 
@@ -724,7 +724,7 @@ html.popup-visible { overflow: hidden; }
   .product-info #callouts img:nth-child(3) { -webkit-transform: translate(-5.21vw, 0); transform: translate(-5.21vw, 0); }
   .product-info .product-info-content { font: 400 1.04vw/1.98vw "lemon_regular"; width: 44.79vw; letter-spacing: 0.18vw; }
   .product-info #nfp { width: 53.65vw; }
-  .product-middle { height: 39.58vw; border-top: 0.78vw solid #000; border-bottom: 0.78vw solid #000; }
+  .product-middle { height: 39.58vw; border-top: 0.78vw solid #000; }
   .instructions-heading { border-top: 0.78vw solid #000; padding: 7.81vw 0; }
   .instructions-heading h2 { font: 400 3.96vw/8.59vw "lemon_milkbold"; letter-spacing: 0.57vw; }
   .instructions .intructions-inner .intructions-row { border-bottom: 0.78vw solid #000; }

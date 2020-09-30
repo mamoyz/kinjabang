@@ -227,7 +227,6 @@
   overflow: hidden;
   height: 760px;
   border-top: 15px solid #000;
-  border-bottom: 15px solid #000;
   @include down-sm {
     height: 50vw;
     border-top: 1.04vw solid #000;
@@ -625,7 +624,6 @@
   .product-middle {
     height: 39.58vw;
     border-top: 0.78vw solid #000;
-    border-bottom: 0.78vw solid #000;
   }
   .instructions-heading {
     border-top: 0.78vw solid #000;

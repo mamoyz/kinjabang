@@ -55,6 +55,14 @@ $(function () {
           .closest("li")
           .addClass("current-menu-item");
       }
+      if (wtop + 100 > $(".instagram").offset().top) {
+        $("header .main-menu ul li.current-menu-item").removeClass(
+          "current-menu-item"
+        );
+        $('header .main-menu ul li a[href="./"')
+          .closest("li")
+          .addClass("current-menu-item");
+      }
     }
     if (wtop > $(window).innerHeight()) {
       $("#back-to-top").fadeIn();

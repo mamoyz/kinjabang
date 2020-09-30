@@ -532,7 +532,7 @@ body {
       display: block;
       transition: all 0.5s;
       &:hover {
-        transform: scale(1.2) rotate(4deg);
+        transform: scale(1.2);
       }
     }
     > .col1 {
