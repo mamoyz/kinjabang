@@ -29,6 +29,8 @@ body {
     opacity: 0;
     background-size: 672px 269px;
     @include down-sm {
+      animation: 8000s homeHero infinite forwards linear;
+
       background-size: 70vw 28.02vw;
     }
   }
@@ -46,6 +48,8 @@ body {
     opacity: 0;
     background-size: 672px 269px;
     @include down-sm {
+      animation: 16000s homeHeroReverse infinite linear;
+
       background-size: 70vw 28.02vw;
     }
   }

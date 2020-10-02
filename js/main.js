@@ -34,7 +34,7 @@ $(function () {
   });
   $(window).on("scroll", function (e) {
     let wtop = $(this).scrollTop();
-    if (wtop > 200) {
+    if (wtop > 30) {
       $("header").addClass("sticky");
     } else {
       $("header").removeClass("sticky");
