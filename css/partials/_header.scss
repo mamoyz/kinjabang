@@ -27,25 +27,6 @@ header {
     }
     .main-menu {
       @include down-sm {
-        button {
-          svg {
-            #bar1 {
-              animation: 0.7s bar1 0s forwards;
-              transform-origin: center;
-              transform: rotate(45deg) translate(0px, 35%);
-            }
-            #bar2 {
-              opacity: 0;
-              transition: all 0.3s;
-              transition-delay: 0.3s !important;
-            }
-            #bar3 {
-              animation: 0.7s bar3 0s forwards;
-              transform-origin: center;
-              transform: rotate(-45deg) translate(5%, -38%);
-            }
-          }
-        }
         ul {
           // height: 100vh;
           // padding: 0 0 15vh 0;
@@ -90,7 +71,6 @@ header {
               transform: scale(1);
               a {
                 &:before {
-                  // animation: 1s mobileNavItemFill 1.1s forwards;
                   display: none;
                 }
               }
@@ -149,12 +129,15 @@ header {
         z-index: 500;
         padding: 0;
         background: transparent;
+        overflow: visible;
         svg {
           width: 100%;
           height: 100%;
+          overflow: visible;
+
           #bar1 {
             animation: 0.7s bar1reverse 0s forwards;
-            transform-origin: center;
+            transform: translateY(0vw) rotate(0deg);
           }
           #bar2 {
             opacity: 1;
@@ -162,7 +145,22 @@ header {
           }
           #bar3 {
             animation: 0.7s bar3reverse 0s forwards;
-            transform-origin: center;
+            transform: translateY(0vw) rotate(0deg);
+          }
+        }
+        &.button-open {
+          svg {
+            #bar1 {
+              animation: 0.7s bar1 0s forwards;
+            }
+            #bar2 {
+              opacity: 0;
+              transition: all 0.3s;
+              transition-delay: 0.3s !important;
+            }
+            #bar3 {
+              animation: 0.7s bar3 0s forwards;
+            }
           }
         }
       }
@@ -187,7 +185,8 @@ header {
         margin: 0;
         // padding: 0 0 0 0;
         padding: 1.56vw;
-
+        top: 0;
+        margin-top: 22vw;
         transform: translate(105vw, 0);
         height: calc(100vh - 22vw);
         overflow: hidden;
@@ -377,49 +376,48 @@ header {
 
 @keyframes bar1 {
   0% {
-    transform: translate(0, 0);
+    transform: translateY(0vw) rotate(0deg);
   }
-  50% {
-    transform: translate(0, 40%);
+  40% {
+    transform: translateY(7vw);
   }
   100% {
-    transform: rotate(45deg) translate(0px, 35%);
+    transform: translateY(-1vw) translateX(5.5vw) rotate(45deg);
+  }
+}
+@keyframes bar1reverse {
+  0% {
+    transform: translateY(-1vw) translateX(5.5vw) rotate(45deg);
+  }
+  40% {
+    transform: translateY(7vw);
+  }
+  100% {
+    transform: translateY(0vw) rotate(0deg);
   }
 }
 
 @keyframes bar3 {
   0% {
-    transform: translate(0, 0);
+    transform: translateY(0vw) rotate(0deg);
   }
-  50% {
-    transform: translate(0, -40%);
-  }
-  100% {
-    transform: rotate(-45deg) translate(5%, -38%);
-  }
-}
-
-@keyframes bar1reverse {
-  0% {
-    transform: rotate(45deg) translate(0px, 35%);
-  }
-  50% {
-    transform: translate(0, 40%) rotate(0);
+  40% {
+    transform: translateY(-7vw);
   }
   100% {
-    transform: translate(0, 0);
+    transform: translateY(4.5vw) translateX(-9vw) rotate(-45deg);
   }
 }
 
 @keyframes bar3reverse {
   0% {
-    transform: rotate(-45deg) translate(5%, -38%);
+    transform: translateY(4.5vw) translateX(-9vw) rotate(-45deg);
   }
-  50% {
-    transform: translate(0, -40%) rotate(0);
+  40% {
+    transform: translateY(-7vw);
   }
   100% {
-    transform: translate(0, 0);
+    transform: translateY(0vw) rotate(0deg);
   }
 }
 

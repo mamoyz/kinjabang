@@ -21,8 +21,11 @@ $(function () {
   });
   $("#toggleMenu").click(function (e) {
     e.preventDefault();
-    $("header").toggleClass("menu-open");
-    $("html").toggleClass("popup-visible");
+    setTimeout(() => {
+      $("header").toggleClass("menu-open");
+      $(this).toggleClass("button-open");
+      $("html").toggleClass("popup-visible");
+    }, 100);
   });
   $(window).on("load", function () {
     $(".autoplayed").addClass("init");
@@ -105,6 +108,13 @@ $(function () {
     );
   });
 
+  $("body").onSwipe(function (results) {
+    if (results.right == true) {
+      if ($("header.menu-open .main-menu ul").length) {
+        $("#toggleMenu").click();
+      }
+    }
+  });
   /* 2. HOMEPAGE JS */
   $(".btn-video").click(function (e) {
     e.preventDefault();
