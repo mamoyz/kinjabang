@@ -55,6 +55,13 @@
     }
   }
 }
+.contact-marquee {
+  h2 {
+    @include down-sm {
+      animation: 7000s marquee infinite linear;
+    }
+  }
+}
 
 .contact-form {
   border-top: 15px solid #000;
@@ -124,6 +131,9 @@
     }
     textarea {
       height: 230px;
+      @include down-sm {
+        min-height: 40vh;
+      }
     }
 
     @include down-sm {

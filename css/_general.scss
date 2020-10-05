@@ -15,13 +15,17 @@ body {
   margin: 0;
   background: #000;
   overflow-x: hidden;
+  @include down-sm {
+    background: #fff;
+    padding: 1.56vw;
+  }
   #app {
     padding: 15px;
     background: #000;
     border: 15px solid #fff;
     @include down-sm {
-      border: none;
-      margin: 1.56vw;
+      border: 1.56vw solid #000;
+      margin: 0;
       padding: 0;
     }
   }

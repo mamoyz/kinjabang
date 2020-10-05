@@ -85,7 +85,7 @@
     }
   }
   @include down-sm {
-    margin-top: 15vw;
+    margin-top: 5vw;
     font: 400 5.5vw/8vw $font-lemon;
     letter-spacing: 0.6vw;
     margin-bottom: 3vw;
@@ -203,11 +203,15 @@
     font: 400 20px/38px $font-regular;
     width: 860px;
     margin: auto;
-    letter-spacing: 3.5px;
+    letter-spacing: 2px;
     @include down-sm {
       font: 400 4vw/5.5vw $font-regular;
       width: 95%;
-      letter-spacing: 0.3vw;
+      letter-spacing: 0.15vw;
+      margin: 0 0 1vw 0;
+    }
+    p {
+      margin: 0 0 10px 0;
     }
   }
   #nfp {
@@ -228,9 +232,13 @@
   height: 760px;
   border-top: 15px solid #000;
   @include down-sm {
-    height: 50vw;
+    height: 70vh;
     border-top: 1.04vw solid #000;
     border-bottom: 1.04vw solid #000;
+    .owl-carousel .owl-item img {
+      width: auto;
+      height: 70vh;
+    }
   }
   &:before {
     content: " ";

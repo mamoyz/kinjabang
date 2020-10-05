@@ -21,10 +21,8 @@ header {
     padding: 1.56vw;
   }
   &.menu-open {
-    background: #000;
-    .logo {
-      display: none;
-    }
+    // background: #000;
+
     .main-menu {
       @include down-sm {
         ul {
@@ -106,8 +104,8 @@ header {
     margin-left: 6px;
     @include down-sm {
       width: 34.58vw;
-      margin-top: 0.52vw;
-      margin-left: 16px;
+      margin-top: -2vw;
+      margin-left: 0;
     }
   }
 
@@ -116,12 +114,13 @@ header {
     button {
       display: none;
       @include down-sm {
-        width: 8.33vw;
-        height: 8.33vw;
-        position: absolute;
-        right: 5.73vw;
-        top: 7.4vw;
-        display: block;
+        width: 15vw;
+        height: 15vw;
+        // position: relative;
+        // top: 1.56vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border: 0;
         outline: 0;
         -webkit-appearance: none;
@@ -131,8 +130,8 @@ header {
         background: transparent;
         overflow: visible;
         svg {
-          width: 100%;
-          height: 100%;
+          width: 8.33vw;
+          height: 8.33vw;
           overflow: visible;
 
           #bar1 {
@@ -149,16 +148,20 @@ header {
           }
         }
         &.button-open {
+          background: #fff;
           svg {
             #bar1 {
+              fill: #000;
               animation: 0.7s bar1 0s forwards;
             }
             #bar2 {
+              fill: #000;
               opacity: 0;
               transition: all 0.3s;
               transition-delay: 0.3s !important;
             }
             #bar3 {
+              fill: #000;
               animation: 0.7s bar3 0s forwards;
             }
           }
@@ -171,14 +174,14 @@ header {
       flex-direction: row;
       padding: 10px 0 0 0;
       @include up-sm {
-        // opacity: 0;
-        // transform: translateY(-200%);
-        // transition: 1s all 1s;
-        display: none;
+        opacity: 0;
+        transform: translateY(-200%);
+        transition: 1s all 1s;
+        // display: none;
       }
       @include down-sm {
         position: fixed;
-        right: 0;
+        right: 1.56vw;
         width: 85vw;
         bottom: 0;
         background: #000;
@@ -186,9 +189,9 @@ header {
         // padding: 0 0 0 0;
         padding: 1.56vw;
         top: 0;
-        margin-top: 22vw;
+        margin-top: 18vw;
         transform: translate(105vw, 0);
-        height: calc(100vh - 22vw);
+        height: calc(100vh - 18vw);
         overflow: hidden;
         transition: transform 0.6s cubic-bezier(0.96, 0.03, 1, 1);
         display: block;
@@ -208,9 +211,11 @@ header {
         }
 
         &.shop-now {
-          opacity: 0;
-          transform: scale(0);
-          transition: 1.3s all 1s;
+          @include down-sm {
+            opacity: 0;
+            transform: scale(0);
+            transition: 1.3s all 1s;
+          }
           a {
             padding: 25px 53px 20px;
             background: #fff url("../assets/img/shop-texture.svg");
@@ -382,12 +387,12 @@ header {
     transform: translateY(7vw);
   }
   100% {
-    transform: translateY(-1vw) translateX(5.5vw) rotate(45deg);
+    transform: translateY(1vw) translateX(5vw) rotate(45deg);
   }
 }
 @keyframes bar1reverse {
   0% {
-    transform: translateY(-1vw) translateX(5.5vw) rotate(45deg);
+    transform: translateY(1vw) translateX(5vw) rotate(45deg);
   }
   40% {
     transform: translateY(7vw);
@@ -405,13 +410,13 @@ header {
     transform: translateY(-7vw);
   }
   100% {
-    transform: translateY(4.5vw) translateX(-9vw) rotate(-45deg);
+    transform: translateY(6vw) translateX(-9vw) rotate(-45deg);
   }
 }
 
 @keyframes bar3reverse {
   0% {
-    transform: translateY(4.5vw) translateX(-9vw) rotate(-45deg);
+    transform: translateY(6vw) translateX(-9vw) rotate(-45deg);
   }
   40% {
     transform: translateY(-7vw);

@@ -236,6 +236,50 @@ body {
     }
   }
 }
+.home-product-xs {
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: flex-start;
+  overflow: hidden;
+  position: relative;
+  .product-marquee {
+    // flex: 0 1 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 20%;
+    height: 100%;
+    .marquee {
+      transform: rotate(90deg);
+      transform-box: fill-box;
+      transform-origin: center;
+      padding: 4.5vw 0 3vw;
+      background: transparent;
+      h2 {
+        font: 400 7vw/7vw $font-lemon;
+        animation: 1500s marquee infinite linear;
+      }
+    }
+  }
+  .product-img {
+    padding-left: 20%;
+    width: 100%;
+    .logo-vert {
+      position: absolute;
+      right: -2vw;
+      top: -3vw;
+      width: 32%;
+    }
+    .dry-noodles {
+      width: 110%;
+      position: relative;
+      top: 47vw;
+      margin-bottom: 47vw;
+      left: -4vw;
+    }
+  }
+}
 .home-sec-title {
   text-align: center;
   padding: 60px 0 40px;
@@ -255,6 +299,9 @@ body {
     transition: all 0.3s;
     position: relative;
     z-index: 5;
+    @include down-sm {
+      color: #fff;
+    }
   }
   &:before {
     content: " ";
@@ -267,6 +314,11 @@ body {
     transform: translate(0, 0);
     z-index: 1;
     transition: all 0.5s;
+
+    @include down-sm {
+      // transform: translate(101%, 0);
+      display: none;
+    }
   }
   &.init {
     &:before {
@@ -280,9 +332,9 @@ body {
     }
   }
   @include down-sm {
-    padding: 20vw 0;
+    padding: 15vw 0;
     h2 {
-      font: 400 8vw/15vw $font-lemon;
+      font: 400 10vw/15vw $font-lemon;
       letter-spacing: 1.77vw;
     }
   }
@@ -339,6 +391,21 @@ body {
         .about-item-desc {
           border-left: 15px solid #000;
           transform: translate(100%, 0);
+          @include down-sm {
+            background: #000;
+            .desc-inner {
+              h3 {
+                color: #fff;
+              }
+              a {
+                color: #fff;
+                span {
+                  color: #fff;
+                }
+                border-color: #fff;
+              }
+            }
+          }
         }
         &.init {
           .about-item-desc {
@@ -402,7 +469,7 @@ body {
             text-transform: uppercase;
             position: relative;
             @include down-sm {
-              font: 400 6.88vw/7.29vw $font-lemon;
+              font: 400 6.88vw/8vw $font-lemon;
               letter-spacing: 0.89vw;
             }
             span {
@@ -423,12 +490,11 @@ body {
                 left: -144px;
                 top: -86px;
                 @include down-sm {
-                  width: 21.25vw;
-                  height: 20.1vw;
-                  left: 0;
+                  width: 18.25vw;
+                  height: 18.1vw;
+                  left: -4vw;
                   right: 0;
-                  margin: auto;
-                  top: -90%;
+                  top: -40%;
                 }
               }
             }
@@ -447,6 +513,7 @@ body {
               padding: 1.98vw 8.85vw;
               font: 400 3.65vw/8.54vw $font-lemon;
               max-width: 70.83vw;
+              border: 1vw solid #000;
             }
           }
         }
@@ -465,6 +532,42 @@ body {
           height: auto;
         }
       }
+      &.has-vertical-heading {
+        @include down-sm {
+          .about-item-img {
+            flex: auto;
+            img {
+              position: relative;
+              left: -30%;
+            }
+            .vertical-heading {
+              background: white;
+              position: absolute;
+              right: 0;
+              top: 0;
+              width: 32%;
+              height: 100%;
+              text-align: center;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              h3 {
+                transform: rotate(270deg);
+                transform-origin: center;
+                font: 400 10vw/12vw $font-lemon;
+                letter-spacing: 1vw;
+                padding: 5vw 0 0vw;
+              }
+            }
+          }
+          .about-item-desc .desc-inner h3 {
+            display: none;
+          }
+          .about-item-desc .desc-inner a {
+            margin-top: 0;
+          }
+        }
+      }
     }
   }
 }
@@ -481,7 +584,12 @@ body {
 
 .instagram {
   background: #000;
-
+  .home-sec-title {
+    @include down-sm {
+      background: #000 url("../assets/img/instagram-bg.jpg") no-repeat;
+      background-size: cover;
+    }
+  }
   .instagram-gallery {
     flex-wrap: wrap;
     @include down-sm {

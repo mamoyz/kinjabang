@@ -28,6 +28,7 @@ footer {
       width: 1090px;
       @include down-sm {
         width: 80%;
+        margin-top: 30vw;
       }
     }
   }
