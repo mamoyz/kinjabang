@@ -677,7 +677,7 @@ html.popup-visible { overflow: hidden; }
 
 .product-info #nfp { margin: auto; width: 1030px; }
 
-@media (max-width: 960px) { .product-info #nfp { width: 90%; margin: auto; } }
+@media (max-width: 960px) { .product-info #nfp { width: 90%; margin: 15vw auto 0; } }
 
 .product-middle { position: relative; z-index: 5; background: #000; overflow: hidden; height: 760px; border-top: 15px solid #000; }
 
