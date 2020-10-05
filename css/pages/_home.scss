@@ -478,6 +478,9 @@ body {
             }
             &.no1 {
               margin-top: 90px;
+              @include down-sm {
+                margin-top: 3vw;
+              }
               &:before {
                 z-index: 1;
                 content: " ";

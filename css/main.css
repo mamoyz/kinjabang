@@ -436,6 +436,8 @@ h1, h2, h3, h4, h5, h6 { margin: 0; }
 
 .home-about .home-about-list .home-about-item .about-item-desc .desc-inner h3.no1 { margin-top: 90px; }
 
+@media (max-width: 960px) { .home-about .home-about-list .home-about-item .about-item-desc .desc-inner h3.no1 { margin-top: 3vw; } }
+
 .home-about .home-about-list .home-about-item .about-item-desc .desc-inner h3.no1:before { z-index: 1; content: " "; width: 204px; height: 193px; background: url("../assets/img/no1.png") no-repeat; display: block; background-size: contain; position: absolute; left: -144px; top: -86px; }
 
 @media (max-width: 960px) { .home-about .home-about-list .home-about-item .about-item-desc .desc-inner h3.no1:before { width: 18.25vw; height: 18.1vw; left: -4vw; right: 0; top: -40%; } }
