@@ -289,6 +289,6 @@ h6 {
 .hidden-xs {
   display: block;
   @include down-sm {
-    display: none;
+    display: none !important;
   }
 }

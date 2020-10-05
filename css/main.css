@@ -265,7 +265,7 @@ h1, h2, h3, h4, h5, h6 { margin: 0; }
 
 .hidden-xs { display: block; }
 
-@media (max-width: 960px) { .hidden-xs { display: none; } }
+@media (max-width: 960px) { .hidden-xs { display: none !important; } }
 
 .hero { background: #000; padding: 140px 0 80px; text-align: center; border-bottom: 35px solid #000; position: relative; overflow: hidden; }
 
@@ -453,7 +453,6 @@ h1, h2, h3, h4, h5, h6 { margin: 0; }
 .home-about .home-about-list .home-about-item .about-item-img img { display: block; width: 100%; height: auto; }
 
 @media (max-width: 960px) { .home-about .home-about-list .home-about-item.has-vertical-heading .about-item-img { -webkit-box-flex: 1; -ms-flex: auto; flex: auto; }
-  .home-about .home-about-list .home-about-item.has-vertical-heading .about-item-img img { position: relative; left: -30%; }
   .home-about .home-about-list .home-about-item.has-vertical-heading .about-item-img .vertical-heading { background: white; position: absolute; right: 0; top: 0; width: 32%; height: 100%; text-align: center; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
   .home-about .home-about-list .home-about-item.has-vertical-heading .about-item-img .vertical-heading h3 { -webkit-transform: rotate(270deg); transform: rotate(270deg); -webkit-transform-origin: center; transform-origin: center; font: 400 10vw/12vw "lemon_milkbold"; letter-spacing: 1vw; padding: 5vw 0 0vw; }
   .home-about .home-about-list .home-about-item.has-vertical-heading .about-item-desc .desc-inner h3 { display: none; }
@@ -465,7 +464,9 @@ h1, h2, h3, h4, h5, h6 { margin: 0; }
 
 .instagram { background: #000; }
 
-@media (max-width: 960px) { .instagram .home-sec-title { background: #000 url("../assets/img/instagram-bg.jpg") no-repeat; background-size: cover; } }
+@media (max-width: 960px) { .instagram .home-sec-title:before { -webkit-transform: none !important; transform: none !important; display: block !important; content: " "; background: url("../assets/img/bg-pattern-1.png"); position: absolute; width: 100vw; height: 100%; left: 0; top: 0; z-index: 5; -webkit-transition: 2s all 0.5s cubic-bezier(0.15, 1.01, 1, 1); transition: 2s all 0.5s cubic-bezier(0.15, 1.01, 1, 1); opacity: 0.7; -webkit-animation: 8000s homeHero infinite forwards linear; animation: 8000s homeHero infinite forwards linear; background-size: 40vw 16vw; }
+  .instagram .home-sec-title:after { -webkit-transform: none !important; transform: none !important; display: block !important; content: " "; background: url("../assets/img/bg-pattern-2.png"); position: absolute; width: 100%; height: 100%; left: 0; top: 0; z-index: 5; -webkit-transition: 2s all 0.5s cubic-bezier(0.15, 1.01, 1, 1); transition: 2s all 0.5s cubic-bezier(0.15, 1.01, 1, 1); opacity: 0.7; -webkit-animation: 16000s homeHeroReverse infinite linear; animation: 16000s homeHeroReverse infinite linear; background-size: 40vw 16vw; }
+  .instagram .home-sec-title h2 { z-index: 10; } }
 
 .instagram .instagram-gallery { -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
