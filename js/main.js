@@ -238,20 +238,21 @@ $(function () {
   });
 
   /* 4. PRODUCT PAGE JS */
-
-  $(".product-carousel").owlCarousel({
-    items: 1,
-    margin: 0,
-    autoHeight: false,
-    loop: true,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    nav: true,
-    center: true,
-    // autoplayHoverPause: true,
-    navText: [
-      "<img src='assets/img/left-arrow.svg'>",
-      "<img src='assets/img/right-arrow.svg'>",
-    ],
-  });
+  if ($(".product-carousel").length) {
+    $(".product-carousel").owlCarousel({
+      items: 1,
+      margin: 0,
+      autoHeight: false,
+      loop: true,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      nav: true,
+      center: true,
+      // autoplayHoverPause: true,
+      navText: [
+        "<img src='assets/img/left-arrow.svg'>",
+        "<img src='assets/img/right-arrow.svg'>",
+      ],
+    });
+  }
 });
