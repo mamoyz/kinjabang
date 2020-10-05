@@ -633,7 +633,7 @@ html.popup-visible { overflow: hidden; }
 
 .product-info #mandarin-style { width: 380px; opacity: 0; -webkit-transition: all 0.3s; transition: all 0.3s; }
 
-@media (max-width: 960px) { .product-info #mandarin-style { width: 40vw; } }
+@media (max-width: 960px) { .product-info #mandarin-style { width: 44vw; } }
 
 .product-info #mandarin-style.init { opacity: 1; }
 
@@ -641,12 +641,12 @@ html.popup-visible { overflow: hidden; }
 
 .product-info h1.init { opacity: 1; letter-spacing: 46px; }
 
-@media (max-width: 960px) { .product-info h1 { font: 400 5vw/5vw "lemon_milkbold"; margin-top: 1vw; margin-bottom: 5vw; }
+@media (max-width: 960px) { .product-info h1 { font: 400 6vw/6vw "lemon_milkbold"; margin-top: 1vw; margin-bottom: 5vw; }
   .product-info h1.init { letter-spacing: 2vw; } }
 
 .product-info #logoimg { width: 90px; opacity: 0; -webkit-transition: 0.5s all 0.5s; transition: 0.5s all 0.5s; -webkit-transform: translate(0, 50px); transform: translate(0, 50px); }
 
-@media (max-width: 960px) { .product-info #logoimg { width: 10vw; -webkit-transform: translate(0, 5.21vw); transform: translate(0, 5.21vw); } }
+@media (max-width: 960px) { .product-info #logoimg { width: 12vw; -webkit-transform: translate(0, 5.21vw); transform: translate(0, 5.21vw); padding: 4vw 0; } }
 
 .product-info #logoimg.init { opacity: 1; -webkit-transform: translate(0, 0); transform: translate(0, 0); }
 
@@ -662,7 +662,7 @@ html.popup-visible { overflow: hidden; }
 
 .product-info #callouts img:nth-child(3) { -webkit-transform: translate(-100px, 0); transform: translate(-100px, 0); }
 
-@media (max-width: 960px) { .product-info #callouts img { width: 60%; margin-bottom: 4vw; }
+@media (max-width: 960px) { .product-info #callouts img { width: 35%; margin-bottom: 4vw; }
   .product-info #callouts img:nth-child(1) { -webkit-transform: translate(0, 20%); transform: translate(0, 20%); -webkit-transition: 0.5s all 0s; transition: 0.5s all 0s; }
   .product-info #callouts img:nth-child(2) { -webkit-transform: translate(0, 20%); transform: translate(0, 20%); -webkit-transition: 0.5s all 0.3s; transition: 0.5s all 0.3s; }
   .product-info #callouts img:nth-child(3) { -webkit-transform: translate(0, 20%); transform: translate(0, 20%); -webkit-transition: 0.5s all 0.6s; transition: 0.5s all 0.6s; } }

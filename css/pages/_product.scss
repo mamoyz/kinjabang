@@ -105,7 +105,7 @@
   #mandarin-style {
     width: 380px;
     @include down-sm {
-      width: 40vw;
+      width: 44vw;
     }
     opacity: 0;
     transition: all 0.3s;
@@ -127,7 +127,7 @@
       letter-spacing: 46px;
     }
     @include down-sm {
-      font: 400 5vw/5vw $font-lemon;
+      font: 400 6vw/6vw $font-lemon;
       margin-top: 1vw;
       margin-bottom: 5vw;
       &.init {
@@ -141,8 +141,9 @@
     transition: 0.5s all 0.5s;
     transform: translate(0, 50px);
     @include down-sm {
-      width: 10vw;
+      width: 12vw;
       transform: translate(0, 5.21vw);
+      padding: 4vw 0;
     }
     &.init {
       opacity: 1;
@@ -175,7 +176,7 @@
         transform: translate(-100px, 0);
       }
       @include down-sm {
-        width: 60%;
+        width: 35%;
         margin-bottom: 4vw;
         &:nth-child(1) {
           transform: translate(0, 20%);
