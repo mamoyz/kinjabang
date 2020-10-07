@@ -8,6 +8,9 @@
 .contact-product {
   overflow: hidden;
   border-bottom: 15px solid #000;
+  @include down-sm {
+    border-bottom: 1.56vw solid #000;
+  }
   .product-img {
     text-align: center;
     background: #fff url("../assets/img/texture-min.svg") !important;
@@ -24,41 +27,46 @@
   }
   .container-fluid {
     &.init {
-      .contact-main-product {
-        opacity: 1;
-        transform: scale(1) translate(0, 0);
+      .product-img {
+        .contact-main-product {
+          opacity: 1;
+          transform: scale(1) translate(0, 0) !important;
+        }
       }
     }
-  }
-  @include down-sm {
-    .container-fluid {
+    @include down-sm {
       &:before {
-        width: 23vw !important;
+        width: 30vw !important;
       }
-    }
-    border-bottom: 1.56vw solid #000;
-    .product-title {
-      flex: 0 1 23vw !important;
-      h2 {
-        top: 6.5vw !important;
-        left: 10.5vw !important;
+      .product-title {
+        flex: 0 1 30vw !important;
+        h2 {
+          font: 400 9.5vw/20vw $font-lemon;
+          left: 13.38vw !important;
+          top: -5vw !important;
+          letter-spacing: 0.89vw;
+        }
       }
-    }
-    .product-img {
-      border-left: 1.56vw solid #000;
-      .contact-main-product {
-        width: 63vw;
-        margin-top: 10vw;
-        margin-bottom: 7vw;
-        transform: scale(0.5) translate(0, 2.6vw);
+      .product-img {
+        border-left: 1.56vw solid #000;
+        .contact-main-product {
+          width: 56vw;
+          margin-top: 10vw;
+          margin-bottom: 7vw;
+          transform: scale(0.5) translate(0, 2.6vw);
+        }
       }
     }
   }
 }
 .contact-marquee {
+  @include down-sm {
+    padding: 5vw 0;
+  }
   h2 {
     @include down-sm {
-      animation: 7000s marquee infinite linear;
+      animation: 3000s marquee infinite linear;
+      font: 400 7vw/14vw $font-lemon;
     }
   }
 }
@@ -91,6 +99,9 @@
       font: 400 28px/28px $font-lemon;
       text-transform: uppercase;
       -webkit-appearance: none;
+      @include down-sm {
+        min-height: 14vw;
+      }
     }
     .kinjabang-select {
       position: relative;
@@ -115,6 +126,9 @@
         position: relative;
         z-index: 2;
         background: transparent;
+        @include down-sm {
+          min-height: 14vw;
+        }
       }
     }
     input[type="submit"] {
@@ -132,7 +146,7 @@
     textarea {
       height: 230px;
       @include down-sm {
-        min-height: 40vh;
+        min-height: 40vh !important;
       }
     }
 
@@ -155,6 +169,8 @@
         border-radius: 1.04vw;
         padding: 4.43vw 3.26vw 2.99vw 3.26vw;
         font: 400 3.65vw/3.65vw $font-lemon;
+        background: url(../assets/img/shop-texture.svg);
+        background-size: cover;
       }
       textarea {
         height: 29.95vw;

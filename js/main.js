@@ -107,7 +107,16 @@ $(function () {
       "swing"
     );
   });
-
+  // if ($(".marquee").length) {
+  //   $.each($(".marquee"), function () {
+  //     let html = $(this).find("span").eq(0);
+  //     let index = $(this).find("span").length;
+  //     setInterval(() => {
+  //       $(this).find("span").eq(index).remove();
+  //       $(this).find("h2").append(html);
+  //     }, 2000);
+  //   });
+  // }
   $("body").onSwipe(function (results) {
     if (results.right == true) {
       if ($("header.menu-open .main-menu ul").length) {

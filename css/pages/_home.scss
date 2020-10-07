@@ -258,7 +258,7 @@ body {
       background: transparent;
       h2 {
         font: 400 7vw/7vw $font-lemon;
-        animation: 1500s marquee infinite linear;
+        animation: 800s marquee infinite linear;
       }
     }
   }
@@ -356,7 +356,7 @@ body {
       overflow: hidden;
       position: relative;
       @include down-sm {
-        border-bottom: 10px solid #000;
+        border-bottom: 2.08vw solid #000;
       }
       &.init {
         .about-item-img {
@@ -376,6 +376,12 @@ body {
         }
 
         &.init {
+          video {
+            opacity: 1;
+            width: 200vw;
+            right: 0;
+            left: auto;
+          }
           .about-item-desc {
             transform: translate(0, 0);
           }
@@ -517,6 +523,7 @@ body {
               font: 400 3.65vw/8.54vw $font-lemon;
               max-width: 70.83vw;
               border: 1vw solid #000;
+              // margin-top: 4.17vw;
             }
           }
         }
@@ -553,13 +560,13 @@ body {
               width: 32%;
               height: 100%;
               text-align: center;
-              display: flex;
+              display: flex !important;
               align-items: center;
               justify-content: center;
               h3 {
                 transform: rotate(270deg);
                 transform-origin: center;
-                font: 400 10vw/12vw $font-lemon;
+                font: 400 8vw/10vw $font-lemon;
                 letter-spacing: 1vw;
                 padding: 5vw 0 0vw;
               }
