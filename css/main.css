@@ -615,7 +615,7 @@ html.popup-visible { overflow: hidden; }
 
 .hero-main-product-sec .hero-main-product:before { content: " "; background: url(../assets/img/SpicyPepper.png) no-repeat; width: 410px; height: 500px; background-size: contain; position: absolute; left: -223px; top: 490px; z-index: 5; -webkit-transform: translate(50%, 0); transform: translate(50%, 0); opacity: 0; -webkit-transition: 1s all 1s; transition: 1s all 1s; }
 
-@media (max-width: 960px) { .hero-main-product-sec .hero-main-product:before { width: 38vw; left: -12vw; top: 30vw; height: 52.08vw; } }
+@media (max-width: 960px) { .hero-main-product-sec .hero-main-product:before { width: 36vw; left: -12vw; top: 30vw; height: 52.08vw; } }
 
 .hero-main-product-sec.init .hero-main-product img { opacity: 1; -webkit-transform: scale(1); transform: scale(1); }
 
