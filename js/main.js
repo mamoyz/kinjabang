@@ -259,8 +259,8 @@ $(function () {
       center: true,
       // autoplayHoverPause: true,
       navText: [
-        "<img src='assets/img/left-arrow.svg'>",
-        "<img src='assets/img/right-arrow.svg'>",
+        "<img src='assets/img/left-arrow.png'>",
+        "<img src='assets/img/right-arrow.png'>",
       ],
     });
   }

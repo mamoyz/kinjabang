@@ -230,7 +230,7 @@
   z-index: 5;
   background: #000;
   overflow: hidden;
-  height: 760px;
+  // height: 760px;
   border-top: 15px solid #000;
   @include down-sm {
     height: 70vh;
@@ -512,29 +512,32 @@
 }
 
 .product-carousel {
-  height: 760px;
+  // height: 760px;
   position: static !important;
+  .owl-dots {
+    display: none !important;
+  }
   .owl-nav {
     .owl-prev {
       left: 85px;
       position: absolute;
-      top: calc(50% - 50px);
+      top: calc(50% - 100px);
       img {
-        width: 100px;
+        width: 200px;
         height: auto;
       }
     }
     .owl-next {
       right: 85px;
       position: absolute;
-      top: calc(50% - 50px);
+      top: calc(50% - 100px);
       img {
-        width: 100px;
+        width: 200px;
         height: auto;
       }
     }
     img {
-      opacity: 0.7;
+      opacity: 0.9;
       transition: all 0.3s;
       &:hover {
         opacity: 1;
@@ -563,6 +566,52 @@
         }
       }
       button {
+      }
+    }
+  }
+}
+
+.product-gallery {
+  border-top: 20px solid #000;
+  .product-gallery-grid {
+    display: flex;
+    // align-items: flex-start;
+    div {
+      overflow: hidden;
+    }
+    img {
+      display: block;
+      width: 100%;
+      transition: all 0.5s;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+    .col1 {
+      flex: 0 1 calc(23.5% - 20px);
+      .td1 {
+        margin-bottom: 20px;
+      }
+    }
+    .col2 {
+      flex: 0 1 32.5%;
+      border-left: 20px solid #000;
+      border-right: 20px solid #000;
+    }
+    .col3 {
+      flex: 0 1 calc(46% - 20px);
+      .row1 {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        border-bottom: 20px solid #000;
+
+        .td1 {
+          flex: 0 1 calc(50% - 10px);
+        }
+        .td2 {
+          flex: 0 1 calc(50% - 10px);
+        }
       }
     }
   }
@@ -739,7 +788,7 @@
   }
 
   .product-carousel {
-    height: 39.58vw;
+    // height: 39.58vw;
 
     .owl-nav {
       .owl-prev {
@@ -754,6 +803,35 @@
         top: calc(50% - 2.6vw);
         img {
           width: 5.21vw;
+        }
+      }
+    }
+  }
+
+  .product-gallery {
+    border-top: 1.04vw solid #000;
+    .product-gallery-grid {
+      .col1 {
+        flex: 0 1 calc(23.5% - 1.04vw);
+        .td1 {
+          margin-bottom: 1.04vw;
+        }
+      }
+      .col2 {
+        border-left: 1.04vw solid #000;
+        border-right: 1.04vw solid #000;
+      }
+      .col3 {
+        flex: 0 1 calc(46% - 1.04vw);
+        .row1 {
+          border-bottom: 1.04vw solid #000;
+
+          .td1 {
+            flex: 0 1 calc(50% - 0.52vw);
+          }
+          .td2 {
+            flex: 0 1 calc(50% - 0.52vw);
+          }
         }
       }
     }
