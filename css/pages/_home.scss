@@ -376,12 +376,6 @@ body {
         }
 
         &.init {
-          video {
-            opacity: 1;
-            width: 200vw;
-            right: 0;
-            left: auto;
-          }
           .about-item-desc {
             transform: translate(0, 0);
           }
