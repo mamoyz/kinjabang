@@ -1160,4 +1160,178 @@
       }
     }
   }
+  .component {
+    .component-left {
+      h2 {
+        font: bold 3.44vw/3.65vw $font-lemon;
+        left: 6.25vw;
+        top: 4.58vw;
+        letter-spacing: -2.08vw;
+      }
+    }
+    .component-right {
+      padding-left: 4.69vw;
+      padding-top: 6.25vw;
+      padding-bottom: 2.34vw;
+      h3 {
+        font: bold 2.45vw/2.97vw $font-lemon;
+        letter-spacing: 1.04vw;
+        margin-bottom: 1.56vw;
+      }
+      .component-item {
+        &.main {
+          .item-img {
+            width: 35.26vw;
+            left: -1.88vw;
+          }
+          .item-no {
+            right: 2.45vw;
+            top: 2.19vw;
+          }
+        }
+        .item-no {
+          width: 3.91vw;
+          height: 3.91vw;
+        }
+        &.item2 {
+          right: 52.08vw;
+          top: 17.19vw;
+
+          .item-img {
+            width: 20.83vw;
+          }
+          .item-no {
+            top: -1.04vw;
+            left: -1.93vw;
+          }
+        }
+        &.item3 {
+          right: 52.08vw;
+          top: 17.19vw;
+
+          .item-img {
+            width: 10.83vw;
+          }
+          .item-no {
+            right: 3.91vw;
+            top: -2.6vw;
+          }
+        }
+        &.item4 {
+          right: 52.08vw;
+          top: 17.19vw;
+
+          .item-img {
+            width: 9.53vw;
+          }
+          .item-no {
+            right: -2.45vw;
+            top: 2.34vw;
+          }
+        }
+        &.item5 {
+          right: 52.08vw;
+          top: 17.19vw;
+
+          .item-img {
+            width: 24.58vw;
+          }
+          .item-no {
+            left: 3.59vw;
+            bottom: -1.82vw;
+          }
+        }
+      }
+      .list {
+        margin-top: 1.56vw;
+        margin-left: -1.04vw;
+        .list-left {
+          img {
+            width: 6.77vw;
+          }
+        }
+        .list-right {
+          ul {
+            margin-top: 2.71vw;
+            li {
+              font: 400 0.89vw/1.51vw $font-regular;
+              letter-spacing: 0.04vw;
+              strong {
+                font: 400 0.89vw/1.51vw $font-lemon;
+              }
+            }
+          }
+        }
+      }
+    }
+    &.init {
+      .component-left {
+        h2 {
+          letter-spacing: 0.31vw;
+        }
+      }
+      .component-right {
+        h3 {
+          letter-spacing: 0.31vw;
+        }
+        .component-item {
+          &.item2 {
+            right: 20.57vw;
+            top: 6.25vw;
+          }
+          &.item3 {
+            right: 8.59vw;
+            top: 11.46vw;
+          }
+          &.item4 {
+            right: 5.21vw;
+            top: 19.53vw;
+          }
+          &.item5 {
+            right: 6.3vw;
+            top: 38.75vw;
+          }
+        }
+      }
+    }
+  }
+
+  .six-pack {
+    border-top: 1.04vw solid #000;
+    .container-fluid {
+      .six-pack-container {
+        padding-top: 4.01vw;
+        .six-pack-text {
+          width: 12.03vw;
+          top: 7.5vw;
+          right: 5.16vw;
+          transform: translate(0, -5.21vw);
+        }
+        .six-pack-img {
+          width: 26.77vw;
+          right: -1.04vw;
+          transform: translate(0, 5.21vw);
+        }
+        .pack-batch {
+          top: -4.43vw;
+          .pack-batch-col {
+            img {
+              width: 18.8vw;
+              transform: translate(-2.6vw, 2.6vw);
+              &:first-child {
+              }
+              &:nth-child(2) {
+                top: -2.71vw;
+                right: -1.04vw;
+              }
+              &:last-child {
+                right: -9.11vw;
+                top: -5.47vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

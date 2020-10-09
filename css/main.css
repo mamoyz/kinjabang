@@ -981,7 +981,44 @@ html.popup-visible { overflow: hidden; }
   .product-gallery .product-gallery-grid .col3 { -webkit-box-flex: 0; -ms-flex: 0 1 calc(46% - 1.04vw); flex: 0 1 calc(46% - 1.04vw); }
   .product-gallery .product-gallery-grid .col3 .row1 { border-bottom: 1.04vw solid #000; }
   .product-gallery .product-gallery-grid .col3 .row1 .td1 { -webkit-box-flex: 0; -ms-flex: 0 1 calc(50% - 0.52vw); flex: 0 1 calc(50% - 0.52vw); }
-  .product-gallery .product-gallery-grid .col3 .row1 .td2 { -webkit-box-flex: 0; -ms-flex: 0 1 calc(50% - 0.52vw); flex: 0 1 calc(50% - 0.52vw); } }
+  .product-gallery .product-gallery-grid .col3 .row1 .td2 { -webkit-box-flex: 0; -ms-flex: 0 1 calc(50% - 0.52vw); flex: 0 1 calc(50% - 0.52vw); }
+  .component .component-left h2 { font: bold 3.44vw/3.65vw "lemon_milkbold"; left: 6.25vw; top: 4.58vw; letter-spacing: -2.08vw; }
+  .component .component-right { padding-left: 4.69vw; padding-top: 6.25vw; padding-bottom: 2.34vw; }
+  .component .component-right h3 { font: bold 2.45vw/2.97vw "lemon_milkbold"; letter-spacing: 1.04vw; margin-bottom: 1.56vw; }
+  .component .component-right .component-item.main .item-img { width: 35.26vw; left: -1.88vw; }
+  .component .component-right .component-item.main .item-no { right: 2.45vw; top: 2.19vw; }
+  .component .component-right .component-item .item-no { width: 3.91vw; height: 3.91vw; }
+  .component .component-right .component-item.item2 { right: 52.08vw; top: 17.19vw; }
+  .component .component-right .component-item.item2 .item-img { width: 20.83vw; }
+  .component .component-right .component-item.item2 .item-no { top: -1.04vw; left: -1.93vw; }
+  .component .component-right .component-item.item3 { right: 52.08vw; top: 17.19vw; }
+  .component .component-right .component-item.item3 .item-img { width: 10.83vw; }
+  .component .component-right .component-item.item3 .item-no { right: 3.91vw; top: -2.6vw; }
+  .component .component-right .component-item.item4 { right: 52.08vw; top: 17.19vw; }
+  .component .component-right .component-item.item4 .item-img { width: 9.53vw; }
+  .component .component-right .component-item.item4 .item-no { right: -2.45vw; top: 2.34vw; }
+  .component .component-right .component-item.item5 { right: 52.08vw; top: 17.19vw; }
+  .component .component-right .component-item.item5 .item-img { width: 24.58vw; }
+  .component .component-right .component-item.item5 .item-no { left: 3.59vw; bottom: -1.82vw; }
+  .component .component-right .list { margin-top: 1.56vw; margin-left: -1.04vw; }
+  .component .component-right .list .list-left img { width: 6.77vw; }
+  .component .component-right .list .list-right ul { margin-top: 2.71vw; }
+  .component .component-right .list .list-right ul li { font: 400 0.89vw/1.51vw "lemon_regular"; letter-spacing: 0.04vw; }
+  .component .component-right .list .list-right ul li strong { font: 400 0.89vw/1.51vw "lemon_milkbold"; }
+  .component.init .component-left h2 { letter-spacing: 0.31vw; }
+  .component.init .component-right h3 { letter-spacing: 0.31vw; }
+  .component.init .component-right .component-item.item2 { right: 20.57vw; top: 6.25vw; }
+  .component.init .component-right .component-item.item3 { right: 8.59vw; top: 11.46vw; }
+  .component.init .component-right .component-item.item4 { right: 5.21vw; top: 19.53vw; }
+  .component.init .component-right .component-item.item5 { right: 6.3vw; top: 38.75vw; }
+  .six-pack { border-top: 1.04vw solid #000; }
+  .six-pack .container-fluid .six-pack-container { padding-top: 4.01vw; }
+  .six-pack .container-fluid .six-pack-container .six-pack-text { width: 12.03vw; top: 7.5vw; right: 5.16vw; -webkit-transform: translate(0, -5.21vw); transform: translate(0, -5.21vw); }
+  .six-pack .container-fluid .six-pack-container .six-pack-img { width: 26.77vw; right: -1.04vw; -webkit-transform: translate(0, 5.21vw); transform: translate(0, 5.21vw); }
+  .six-pack .container-fluid .six-pack-container .pack-batch { top: -4.43vw; }
+  .six-pack .container-fluid .six-pack-container .pack-batch .pack-batch-col img { width: 18.8vw; -webkit-transform: translate(-2.6vw, 2.6vw); transform: translate(-2.6vw, 2.6vw); }
+  .six-pack .container-fluid .six-pack-container .pack-batch .pack-batch-col img:nth-child(2) { top: -2.71vw; right: -1.04vw; }
+  .six-pack .container-fluid .six-pack-container .pack-batch .pack-batch-col img:last-child { right: -9.11vw; top: -5.47vw; } }
 
 .contact-hero { height: 470px; }
 
