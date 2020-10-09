@@ -30,9 +30,7 @@ $(function () {
   $(window).on("load", function () {
     $(".autoplayed").addClass("init");
     if ($(window).innerWidth() < 961) {
-      setTimeout(() => {
-        $(".autoplayed-xs").addClass("init");
-      }, 1000);
+      $(".autoplayed-xs").addClass("init");
     }
   });
   $(window).on("scroll", function (e) {
@@ -82,20 +80,21 @@ $(function () {
       ) {
         $(this).addClass("init");
       } else {
-        if (!$(this).hasClass("once")) {
+        if (!$(this).hasClass("once") && !$(this).hasClass("autoplayed-xs")) {
           $(this).removeClass("init");
         }
       }
-      // if ($(window).scrollTop() + $(window).innerHeight() + 200)
-      if (
-        $(window).scrollTop() + $(window).innerHeight() + 200 >
-        $("body").innerHeight()
-      ) {
-        $("footer").addClass("init");
-      } else {
-        $("footer").removeClass("init");
-      }
     });
+    // if ($(window).scrollTop() + $(window).innerHeight() + 200)
+
+    if (
+      $(window).scrollTop() + $(window).innerHeight() + 200 >
+      $("body").innerHeight()
+    ) {
+      $("footer").addClass("init");
+    } else {
+      $("footer").removeClass("init");
+    }
   });
 
   $("#back-to-top").click(function (e) {
@@ -108,16 +107,16 @@ $(function () {
       "swing"
     );
   });
-  // if ($(".marquee").length) {
-  //   $.each($(".marquee"), function () {
-  //     let html = $(this).find("span").eq(0);
-  //     let index = $(this).find("span").length;
-  //     setInterval(() => {
-  //       $(this).find("span").eq(index).remove();
-  //       $(this).find("h2").append(html);
-  //     }, 2000);
-  //   });
-  // }
+  if ($(".instructions-heading").length) {
+    $.each($(".instructions-heading h2"), function () {
+      const html = $(this).find("span").eq(0).html();
+      // let index = $(this).find("span").length;
+      setInterval(() => {
+        $(this).append("<span>" + html + "</span>");
+        // $(this).find("span").eq(1).remove();
+      }, 8000);
+    });
+  }
   $("body").onSwipe(function (results) {
     if (results.right == true) {
       if ($("header.menu-open .main-menu ul").length) {

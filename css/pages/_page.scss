@@ -1,0 +1,25 @@
+.wp-page {
+  font: 400 16px/28px $font-regular;
+  h1 {
+    font: 400 80px/110px $font-lemon;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+  }
+  h2 {
+    font: 400 26px/38px $font-lemon;
+    text-transform: uppercase;
+    margin-top: 50px;
+  }
+  h3 {
+    font: 400 22px/34px $font-lemon;
+    text-transform: uppercase;
+    margin-top: 50px;
+  }
+  h4 {
+    font: 400 18px/30px $font-lemon;
+    text-transform: uppercase;
+    margin-top: 50px;
+  }
+  p {
+  }
+}

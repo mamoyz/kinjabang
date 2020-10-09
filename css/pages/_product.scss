@@ -230,7 +230,6 @@
   z-index: 5;
   background: #000;
   overflow: hidden;
-  // height: 760px;
   border-top: 15px solid #000;
   @include down-sm {
     height: 70vh;
@@ -641,6 +640,8 @@
   }
 }
 .component {
+  border-top: 20px solid #000;
+
   .container-fluid {
     display: flex;
     justify-content: space-between;
@@ -842,8 +843,6 @@
 }
 
 .six-pack {
-  border-top: 20px solid #000;
-  min-height: 100vh;
   .container-fluid {
     flex-direction: row-reverse;
     .six-pack-container {
@@ -935,8 +934,8 @@
       .six-pack-text,
       .six-pack-img,
       .pack-batch .pack-batch-col img {
-        opacity: 1;
-        transform: translate(0, 0);
+        opacity: 1 !important;
+        transform: translate(0, 0) !important;
       }
     }
   }
@@ -1018,7 +1017,6 @@
   }
 
   .product-middle {
-    height: 39.58vw;
     border-top: 0.78vw solid #000;
   }
   .instructions-heading {
@@ -1161,6 +1159,8 @@
     }
   }
   .component {
+    border-top: 1.04vw solid #000;
+
     .component-left {
       h2 {
         font: bold 3.44vw/3.65vw $font-lemon;
@@ -1297,7 +1297,6 @@
   }
 
   .six-pack {
-    border-top: 1.04vw solid #000;
     .container-fluid {
       .six-pack-container {
         padding-top: 4.01vw;
