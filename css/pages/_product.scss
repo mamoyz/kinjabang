@@ -308,7 +308,7 @@
       display: flex;
       align-items: stretch;
       justify-content: space-between;
-      border-bottom: 15px solid #000;
+      border-bottom: 20px solid #000;
       background: #fff;
       position: relative;
       overflow: hidden;
@@ -518,20 +518,20 @@
   }
   .owl-nav {
     .owl-prev {
-      left: 85px;
+      left: 40px;
       position: absolute;
-      top: calc(50% - 100px);
+      top: 60%;
       img {
-        width: 200px;
+        width: 80px;
         height: auto;
       }
     }
     .owl-next {
-      right: 85px;
+      right: 40px;
       position: absolute;
-      top: calc(50% - 100px);
+      top: 60%;
       img {
-        width: 200px;
+        width: 80px;
         height: auto;
       }
     }
@@ -548,14 +548,12 @@
     @include down-sm {
       .owl-prev {
         left: 0;
-        top: calc(50% - 4vw);
         img {
           width: 8vw;
         }
       }
       .owl-next {
         right: 0;
-        top: calc(50% - 4vw);
         img {
           width: 8vw;
         }
@@ -600,14 +598,14 @@
       }
     }
     .col2 {
-      flex: 0 1 32%;
+      flex: 0 1 31%;
       border-left: 20px solid #000;
       border-right: 20px solid #000;
       opacity: 0;
       transition: 0.6s all 0.3s;
     }
     .col3 {
-      flex: 0 1 calc(44.4% - 20px);
+      flex: 0 1 calc(45.4% - 20px);
       .row1 {
         display: flex;
         align-items: flex-start;
@@ -1030,7 +1028,7 @@
   .instructions {
     .intructions-inner {
       .intructions-row {
-        border-bottom: 0.78vw solid #000;
+        border-bottom: 1.04vw solid #000;
 
         &:nth-child(even) {
           div {
@@ -1114,17 +1112,15 @@
 
     .owl-nav {
       .owl-prev {
-        left: 4.43vw;
-        top: calc(50% - 2.6vw);
+        left: 2vw;
         img {
-          width: 5.21vw;
+          width: 4.16vw;
         }
       }
       .owl-next {
-        right: 4.43vw;
-        top: calc(50% - 2.6vw);
+        right: 2vw;
         img {
-          width: 5.21vw;
+          width: 4.16vw;
         }
       }
     }
@@ -1134,7 +1130,7 @@
     border-top: 1.04vw solid #000;
     .product-gallery-grid {
       .col1 {
-        flex: 0 1 calc(235% - 1.04vw);
+        flex: 0 1 calc(23% - 1.04vw);
         .td1 {
           margin-bottom: 1.04vw;
         }
@@ -1144,7 +1140,7 @@
         border-right: 1.04vw solid #000;
       }
       .col3 {
-        flex: 0 1 calc(44.4% - 1.04vw);
+        flex: 0 1 calc(45.4% - 1.04vw);
         .row1 {
           border-bottom: 1.04vw solid #000;
 
