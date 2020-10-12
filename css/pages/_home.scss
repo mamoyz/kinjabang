@@ -681,9 +681,9 @@ body {
     img {
       width: 100%;
       display: block;
-      transition: all 0.5s;
+      transition: all 1s;
       &:hover {
-        transform: scale(1.2);
+        transform: scale(1.05);
       }
     }
     > .col1 {

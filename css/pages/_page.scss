@@ -23,3 +23,48 @@
   p {
   }
 }
+@include desk {
+  .wp-page {
+    font: 400 0.83vw/1.46vw $font-regular;
+    h1 {
+      font: 400 4.17vw/5.73vw $font-lemon;
+      margin-bottom: 5.21vw;
+    }
+    h2 {
+      font: 400 1.35vw/1.98vw $font-lemon;
+      margin-top: 2.6vw;
+    }
+    h3 {
+      font: 400 1.15vw/1.77vw $font-lemon;
+      margin-top: 2.6vw;
+    }
+    h4 {
+      font: 400 0.94vw/1.56vw $font-lemon;
+      margin-top: 2.6vw;
+    }
+  }
+}
+
+@include down-sm {
+  .wp-page {
+    padding-left: 3vw;
+    padding-right: 3vw;
+    font: 400 3.8vw/6vw $font-regular;
+    h1 {
+      font: 400 9vw/12vw $font-lemon;
+      margin-bottom: 5vw;
+    }
+    h2 {
+      font: 400 6vw/8vw $font-lemon;
+      margin-top: 8vw;
+    }
+    h3 {
+      font: 400 5vw/7.2vw $font-lemon;
+      margin-top: 8vw;
+    }
+    h4 {
+      font: 400 4.5vw/6.5vw $font-lemon;
+      margin-top: 8vw;
+    }
+  }
+}

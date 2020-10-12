@@ -73,6 +73,10 @@ $(function () {
     $.each($(".yz-animation"), function () {
       // if ($(window).innerWidth() < 961) return false;
       let offset = $(this).data("offset") || 0;
+      if ($(window).innerWidth() < 961) {
+        offset = 0;
+      }
+
       if (
         $(window).scrollTop() +
           $(window).innerHeight() * animationTriggerPoint * 0.01 >
