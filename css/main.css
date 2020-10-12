@@ -683,6 +683,10 @@ html.popup-visible { overflow: hidden; }
 
 .product-info .product-info-content p { margin: 0 0 10px 0; }
 
+.product-info .product-allergen { font: 400 14px/28px "lemon_regular"; font-style: italic; width: 860px; margin: auto; letter-spacing: 1px; }
+
+@media (max-width: 960px) { .product-info .product-allergen { font: 400 2.5vw/4vw "lemon_regular"; font-style: italic; width: 100%; margin-top: 5vw; } }
+
 .product-info #nfp { margin: auto; width: 1030px; }
 
 @media (max-width: 960px) { .product-info #nfp { width: 90%; margin: 15vw auto 0; } }
@@ -1142,7 +1146,9 @@ html.popup-visible { overflow: hidden; }
 
 @media (max-width: 960px) { .contact-form .form-group .kinjabang-select select { min-height: 14vw; } }
 
-.contact-form .form-group input[type="submit"] { border: 6px solid #000; border-radius: 8px; width: 100%; padding: 34px 25px 23px 25px; font: 400 28px/28px "lemon_milkbold"; text-transform: uppercase; background: url(../assets/img/shop-texture.svg); background-size: cover; outline: 0; -webkit-appearance: none; cursor: pointer; }
+.contact-form .form-group input[type="submit"] { border: 6px solid #000; border-radius: 8px; width: 100%; padding: 34px 25px 23px 25px; font: 400 28px/28px "lemon_milkbold"; text-transform: uppercase; background: #fff; outline: 0; -webkit-appearance: none; cursor: pointer; -webkit-transition: all 0.3s; transition: all 0.3s; }
+
+.contact-form .form-group input[type="submit"]:hover { color: #fff; background: #df6048; }
 
 .contact-form .form-group textarea { height: 230px; }
 
@@ -1151,7 +1157,7 @@ html.popup-visible { overflow: hidden; }
 @media (max-width: 960px) { .contact-form .form-group { margin-bottom: 7.94vw; }
   .contact-form .form-group > label { font: 400 3.65vw/3.91vw "lemon_milkbold"; margin-bottom: 3.26vw; }
   .contact-form .form-group .kinjabang-input { border: 0.78vw solid #000; border-radius: 1.04vw; padding: 4.43vw 3.26vw 2.99vw 3.26vw; font: 400 3.65vw/3.65vw "lemon_milkbold"; }
-  .contact-form .form-group input[type="submit"] { border: 0.78vw solid #000; border-radius: 1.04vw; padding: 4.43vw 3.26vw 2.99vw 3.26vw; font: 400 3.65vw/3.65vw "lemon_milkbold"; background: url(../assets/img/shop-texture.svg); background-size: cover; }
+  .contact-form .form-group input[type="submit"] { border: 0.78vw solid #000; border-radius: 1.04vw; padding: 4.43vw 3.26vw 2.99vw 3.26vw; font: 400 3.65vw/3.65vw "lemon_milkbold"; }
   .contact-form .form-group textarea { height: 29.95vw; } }
 
 @media (min-width: 961px) and (max-width: 1919px) { .contact-hero { height: 24.48vw; }

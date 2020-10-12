@@ -138,11 +138,15 @@
       padding: 34px 25px 23px 25px;
       font: 400 28px/28px $font-lemon;
       text-transform: uppercase;
-      background: url(../assets/img/shop-texture.svg);
-      background-size: cover;
+      background: #fff;
       outline: 0;
       -webkit-appearance: none;
       cursor: pointer;
+      transition: all 0.3s;
+      &:hover {
+        color: #fff;
+        background: #df6048;
+      }
     }
     textarea {
       height: 230px;
@@ -170,8 +174,6 @@
         border-radius: 1.04vw;
         padding: 4.43vw 3.26vw 2.99vw 3.26vw;
         font: 400 3.65vw/3.65vw $font-lemon;
-        background: url(../assets/img/shop-texture.svg);
-        background-size: cover;
       }
       textarea {
         height: 29.95vw;
